@@ -4,16 +4,7 @@ import { useNavigate } from "react-router";
 
 export const Home = () => {
     const navigate = useNavigate()
-    const [activeSection, setActiveSection] = useState('home');
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-    useEffect(() => {
-        const section = document.getElementById(activeSection);
-        if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
-        }
-        setIsMobileMenuOpen(false);
-    }, [activeSection]);
     return (
         <div id="home" className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 relative overflow-hidden max-w-full w-full left-0 right-0">
             <div className="absolute inset-0">
