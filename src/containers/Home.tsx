@@ -1,5 +1,4 @@
 import { ArrowRight, Award, Code, Download, Sparkles, TrendingUp, Users } from "lucide-react"
-import { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 
 export const Home = () => {
