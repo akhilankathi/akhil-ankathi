@@ -1,6 +1,7 @@
 name : deploy akhil ankathi portfolio
 
 on:
+  workflow_dispatch:
   push: 
     branches:
       -main 
