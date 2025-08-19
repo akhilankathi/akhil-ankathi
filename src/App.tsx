@@ -15,6 +15,7 @@ function App() {
     <div className='min-h-screen bg-gray-900 w-full'>
       <NavigationBar />
         <Routes>
+        <Route path='' element={<Home />} />
           <Route path='home' element={<Home />} />
           <Route path='about' element={<About />} />
           <Route path='experience' element={<Experiance />} />
