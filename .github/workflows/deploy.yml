@@ -1,38 +1,36 @@
-name : deploy akhil ankathi portfolio
+name: Deploy Akhil Ankathi Portfolio
 
 on:
-  workflow_dispatch:
-  push: 
+  push:
     branches:
-      -main 
+      - main
 
 jobs:
   build-deploy:
-    runs-on : ubantu-latest
+    runs-on: ubuntu-latest
 
     steps:
-     #checkout reposistory 
-      - name : checkout code
+      # Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v3
-      # set up node js
-      - name : set up node js
-        uses: actions/setup-node@v3
-        with :
-          node-version : 18
 
-      #install dependencies
-      - name : install dependencies
+      # Set up Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      # Install dependencies
+      - name: Install dependencies
         run: npm install
 
-        #build the project
-      - name : build the project
+      # Build the project
+      - name: Build the project
         run: npm run build
 
-        #deploy the project to github pages
-      - name : deploy the project to github pages
-        uses : peaceiris/actions-gh-pages@v3
-        with :
-           github_token : ${{ secrets.GITHUB_TOKEN }}
-           publish_dir : dist
-
-
+      # Deploy the project to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
