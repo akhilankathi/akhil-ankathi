@@ -1,7 +1,16 @@
 import { Calendar, Code, ExternalLink, Sparkles } from "lucide-react"
 import { projects } from "../constants/Projects"
+import { useEffect } from "react"
+import { getProjectsList } from "../services/projects.service"
+// import { useNavigate } from "react-router"
+// import Dashboard from 'music/Dashboard'
 
 export const Projects = () => {
+    // const navigate = useNavigate()
+
+    useEffect(()=>{
+        getProjectsList()
+    },[])
     return (
         <div id="projects" className="min-h-screen bg-gray-900 py-20">
             <div className="container mx-auto px-6">
@@ -12,7 +21,7 @@ export const Projects = () => {
                         </h2>
                         <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-cyan-500 mx-auto"></div>
                     </div>
-
+                    {/* <Dashboard/> */}
                     <div className="grid lg:grid-cols-2 gap-8">
                         {projects.map((project, index) => (
                             <div key={index} className="group">
