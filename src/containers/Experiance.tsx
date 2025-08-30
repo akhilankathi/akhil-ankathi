@@ -1,7 +1,41 @@
 import { Calendar, MapPin } from "lucide-react"
-import { experiences } from "../constants/Experiance"
+import { useEffect, useState } from "react"
+import type { Experience } from "../models"
+import { useExperaince } from "../store"
+import { getExperianceList } from "../services"
 
 export const Experiance = () => {
+    const setExperianceList = useExperaince((state: any) => state.setExperianceList)
+    const resetExperianceStore = useExperaince((state: any) => state.resetExperianceStore)
+    const experianceList = useExperaince((state: any) => state.experianceList)
+    const [experianceListState, setExperianceListState] = useState<Experience[]>([])
+
+    const getProjectsListFunc = async () => {
+        try {
+            let response: any = await getExperianceList()
+            console.log(response)
+            if (response && response?.data)
+                setExperianceList(response?.data)
+        } catch (error) {
+            console.log(error)
+        }
+
+
+    }
+
+    useEffect(() => {
+        getProjectsListFunc()
+        return () => {
+            resetExperianceStore()
+        }
+    }, [])
+
+    useEffect(() => {
+        if (experianceList) {
+            setExperianceListState(experianceList)
+        }
+
+    }, [experianceList])
     return (
         <div id="experience" className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 py-20">
             <div className="container mx-auto px-6">
@@ -18,7 +52,7 @@ export const Experiance = () => {
                         <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-purple-500 via-cyan-500 to-pink-500"></div>
 
                         <div className="space-y-12">
-                            {experiences.map((exp, index) => (
+                            {experianceListState ? experianceListState?.map((exp, index) => (
                                 <div key={index} className="relative pl-20">
                                     {/* Timeline dot */}
                                     <div className="absolute left-6 w-5 h-5 bg-gradient-to-br from-purple-400 to-cyan-400 rounded-full border-4 border-gray-900"></div>
@@ -53,7 +87,7 @@ export const Experiance = () => {
                                         </div>
                                     </div>
                                 </div>
-                            ))}
+                            )) : "loading.....!"}
                         </div>
                     </div>
                 </div>

@@ -4,17 +4,17 @@ import type { Project } from "../models"
 
 
 const initialState = {
-    isLoaing : true,
-    projectsList : [],
-   error : ''
-} 
+  isLoaing: true,
+  projectsList: [],
+  error: ''
+}
 
 export const useProjects = create((set) => ({
- ...initialState,
-  getProjectsList : (projects : Project[])=> set(()=> ({
-    projects: projects
+  ...initialState,
+  setProjectsList: (projects: Project[]) => set(() => ({
+    projectsList: projects
   })),
-  resetProjectsStore: () => set(()=>{
-    initialState
-  })
+  resetProjectsStore: () => set((state: any) => ({
+    projectsList: []
+  }))
 }))

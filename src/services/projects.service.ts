@@ -1,16 +1,16 @@
 import axios from "axios"
 
 export const getProjectsList = () => {
-  const APIURL = import.meta.env.VITE_APIURI
-    let result = axios.get(`${APIURL}/projects`)
-
+    const APIURL = import.meta.env.VITE_APIURI
+    let result: any = axios.get(`${APIURL}/projects`)
     try {
-        result.then((data) => {
-            console.log(data)
-        }).catch((err) => {
+       return result.then((data: any) => {
+            if (data && data?.data)
+                return data.data
+        }).catch((err:any) => {
             console.log(err)
-        }).finally(()=>{
-            console.log('finally')
+        }).finally(() => {
+            // console.log('finally')
         })
 
     } catch (error) {

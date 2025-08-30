@@ -1,16 +1,46 @@
 import { Calendar, Code, ExternalLink, Sparkles } from "lucide-react"
-import { projects } from "../constants/Projects"
-import { useEffect } from "react"
-import { getProjectsList } from "../services/projects.service"
+import { useEffect, useState } from "react"
+import { getProjectsList } from "../services"
+import { useProjects } from "../store/projects.store"
+import type { Project } from "../models"
 // import { useNavigate } from "react-router"
 // import Dashboard from 'music/Dashboard'
 
 export const Projects = () => {
     // const navigate = useNavigate()
+    const setProjectsList = useProjects((state: any) => state.setProjectsList)
+    const resetProjectsStore = useProjects((state: any) => state.resetProjectsStore)
+    const projectsList = useProjects((state: any) => state.projectsList)
+    const [projectsListState, setProjectsListState] = useState<Project[]>([])
 
-    useEffect(()=>{
-        getProjectsList()
-    },[])
+    const getProjectsListFunc = async () => {
+        try {
+            let response: any = await getProjectsList()
+            console.log(response)
+            if (response && response?.data)
+                setProjectsList(response?.data)
+        } catch (error) {
+            console.log(error)
+        }
+
+
+    }
+
+    useEffect(() => {
+        getProjectsListFunc()
+        return () => {
+            resetProjectsStore()
+        }
+    }, [])
+
+    useEffect(() => {
+        if (projectsList) {
+            setProjectsListState(projectsList)
+        }
+
+    }, [projectsList])
+
+
     return (
         <div id="projects" className="min-h-screen bg-gray-900 py-20">
             <div className="container mx-auto px-6">
@@ -23,7 +53,7 @@ export const Projects = () => {
                     </div>
                     {/* <Dashboard/> */}
                     <div className="grid lg:grid-cols-2 gap-8">
-                        {projects.map((project, index) => (
+                        {projectsListState ? projectsListState?.map((project, index) => (
                             <div key={index} className="group">
                                 <div className="bg-gradient-to-br from-purple-500/10 via-transparent to-cyan-500/10 backdrop-blur-sm border border-white/10 rounded-3xl p-8 hover:scale-[1.02] hover:border-purple-500/30 transition-all duration-500 h-full">
                                     <div className="mb-6">
@@ -72,7 +102,7 @@ export const Projects = () => {
                                     </div>
                                 </div>
                             </div>
-                        ))}
+                        )) : "loading.......!" }
                     </div>
                 </div>
             </div>

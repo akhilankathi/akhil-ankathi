@@ -5,12 +5,13 @@ export const getExperianceList = () => {
     let result = axios.get(`${APIURL}/experiance`)
 
     try {
-        result.then((data) => {
-            console.log(data)
-        }).catch((err) => {
+        return result.then((data: any) => {
+            if (data && data?.data)
+                return data.data
+        }).catch((err: any) => {
             console.log(err)
-        }).finally(()=>{
-            console.log('finally')
+        }).finally(() => {
+            // console.log('finally')
         })
 
     } catch (error) {
