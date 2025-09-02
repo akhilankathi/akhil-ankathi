@@ -1,5 +1,4 @@
 import { create } from "zustand"
-import { projects } from "../constants/Projects"
 import type { Project } from "../models"
 
 
@@ -14,7 +13,7 @@ export const useProjects = create((set) => ({
   setProjectsList: (projects: Project[]) => set(() => ({
     projectsList: projects
   })),
-  resetProjectsStore: () => set((state: any) => ({
+  resetProjectsStore: () => set(() => ({
     projectsList: []
   }))
 }))

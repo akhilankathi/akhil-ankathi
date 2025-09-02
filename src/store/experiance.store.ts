@@ -13,7 +13,7 @@ export const useExperaince = create((set) => ({
   setExperianceList: (experianceList: Experience[]) => set(() => ({
     experianceList: experianceList
   })),
-  resetExperianceStore: () => set((state: any) => ({
+  resetExperianceStore: () => set(() => ({
     experianceList: []
   }))
 }))

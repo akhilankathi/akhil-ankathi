@@ -1,8 +1,7 @@
-import { ArrowRight, Award, Code, Download, DownloadIcon, Sparkles, TrendingUp, Users } from "lucide-react"
+import { ArrowRight, Award, Code, Download, Sparkles, TrendingUp, Users } from "lucide-react"
 import { useEffect } from "react";
 import { useNavigate } from "react-router";
 import { getProjectsList } from "../services/projects.service";
-import { downloadResumeService } from "../services/downloadResume.service";
 
 export const Home = () => {
     const navigate = useNavigate()
@@ -23,9 +22,9 @@ export const Home = () => {
         getProjectsListFunc()
     }, [])
 
-    const downloadResumeFunc = async()=>{
-        let reponse = await downloadResumeService()
-    }
+    // const downloadResumeFunc = async()=>{
+    //     let reponse = await downloadResumeService()
+    // }
 
     return (
         <div id="home" className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 relative overflow-hidden max-w-full w-full left-0 right-0">
@@ -75,13 +74,13 @@ export const Home = () => {
                                     <Download className="mr-2 w-5 h-5" />
                                     Get In Touch
                                 </button>
-                                 <button
+                                 {/* <button
                                     onClick={() => downloadResumeFunc()}
                                     className="group bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-4 rounded-xl font-semibold hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300 flex items-center"
                                 >
                                     Download Resume
                                     <DownloadIcon className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                                </button>
+                                </button> */}
                             </div>
                         </div>
 

@@ -1,19 +1,11 @@
 import { Menu, X } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router";
 
 export const NavigationBar = () => {
-    const [activeSection, setActiveSection] = useState('home');
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const navigate = useNavigate()
 
-    useEffect(() => {
-        const section = document.getElementById(activeSection);
-        if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
-        }
-        setIsMobileMenuOpen(false);
-    }, [activeSection]);
     const navItems = [
         { id: 'home', label: 'Home' },
         { id: 'about', label: 'About' },
@@ -37,10 +29,10 @@ export const NavigationBar = () => {
                                 key={item.id}
                                 onClick={() => navigate(item.id)}
                                 className="bg-gradient-to-r from-seablue-400 to-cyan-400 bg-clip-text text-transparent"
-                                // className={`px-4 py-2 rounded-lg font-medium transition-all duration-300 ${activeSection === item.id
-                                //         ? 'text-white shadow-lg bg-none'
-                                //         : 'text-gray-300 hover:text-white bg-none'
-                                //     }`}
+                            // className={`px-4 py-2 rounded-lg font-medium transition-all duration-300 ${activeSection === item.id
+                            //         ? 'text-white shadow-lg bg-none'
+                            //         : 'text-gray-300 hover:text-white bg-none'
+                            //     }`}
                             >
                                 {item.label}
                             </button>
@@ -51,7 +43,7 @@ export const NavigationBar = () => {
                     <div className="md:hidden">
                         <button
                             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                            // className="text-gray-300 hover:text-white p-2"
+                        // className="text-gray-300 hover:text-white p-2"
                         >
                             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
                         </button>
@@ -65,11 +57,14 @@ export const NavigationBar = () => {
                             {navItems.map((item) => (
                                 <button
                                     key={item.id}
-                                    onClick={() => setActiveSection(item.id)}
-                                    // className={`text-left px-4 py-3 rounded-lg font-medium transition-all duration-300 ${activeSection === item.id
-                                    //         ? 'bg-gradient-to-r from-purple-500 to-cyan-500 text-white'
-                                    //         : 'text-gray-300 hover:text-white hover:bg-white/5'
-                                    //     }`}
+                                    onClick={() => {
+                                        navigate(item.id)
+                                        setIsMobileMenuOpen(!isMobileMenuOpen)
+                                    }}
+                                // className={`text-left px-4 py-3 rounded-lg font-medium transition-all duration-300 ${activeSection === item.id
+                                //         ? 'bg-gradient-to-r from-purple-500 to-cyan-500 text-white'
+                                //         : 'text-gray-300 hover:text-white hover:bg-white/5'
+                                //     }`}
                                 >
                                     {item.label}
                                 </button>
