@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import type { Experience } from "../models"
 import { useExperaince } from "../store"
 import { getExperianceList } from "../services"
+import Loader from "../components/Loader"
 
 export const Experiance = () => {
     const setExperianceList = useExperaince((state: any) => state.setExperianceList)
@@ -87,7 +88,7 @@ export const Experiance = () => {
                                         </div>
                                     </div>
                                 </div>
-                            )) : "loading.....!"}
+                            )) : <Loader />}
                         </div>
                     </div>
                 </div>

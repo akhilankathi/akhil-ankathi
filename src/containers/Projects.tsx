@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import { getProjectsList } from "../services"
 import { useProjects } from "../store/projects.store"
 import type { Project } from "../models"
+import Loader from "../components/Loader"
 // import { useNavigate } from "react-router"
 // import Dashboard from 'music/Dashboard'
 
@@ -102,7 +103,7 @@ export const Projects = () => {
                                     </div>
                                 </div>
                             </div>
-                        )) : "loading.......!" }
+                        )) : <Loader/> }
                     </div>
                 </div>
             </div>
