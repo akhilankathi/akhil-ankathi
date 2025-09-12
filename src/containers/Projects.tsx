@@ -4,6 +4,7 @@ import { getProjectsList } from "../services"
 import { useProjects } from "../store/projects.store"
 import type { Project } from "../models"
 import Loader from "../components/Loader"
+import { projects } from "../constants/Projects"
 // import { useNavigate } from "react-router"
 // import Dashboard from 'music/Dashboard'
 
@@ -12,7 +13,7 @@ export const Projects = () => {
     const setProjectsList = useProjects((state: any) => state.setProjectsList)
     const resetProjectsStore = useProjects((state: any) => state.resetProjectsStore)
     const projectsList = useProjects((state: any) => state.projectsList)
-    const [projectsListState, setProjectsListState] = useState<Project[]>([])
+    const [projectsListState, setProjectsListState] = useState<Project[]>(projects)
 
     const getProjectsListFunc = async () => {
         try {

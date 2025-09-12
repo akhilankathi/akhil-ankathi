@@ -4,12 +4,13 @@ import type { Experience } from "../models"
 import { useExperaince } from "../store"
 import { getExperianceList } from "../services"
 import Loader from "../components/Loader"
+import { experiences } from "../constants/Experiance"
 
 export const Experiance = () => {
     const setExperianceList = useExperaince((state: any) => state.setExperianceList)
     const resetExperianceStore = useExperaince((state: any) => state.resetExperianceStore)
     const experianceList = useExperaince((state: any) => state.experianceList)
-    const [experianceListState, setExperianceListState] = useState<Experience[]>([])
+    const [experianceListState, setExperianceListState] = useState<Experience[]>(experiences)
 
     const getProjectsListFunc = async () => {
         try {
