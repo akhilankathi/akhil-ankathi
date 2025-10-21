@@ -21,7 +21,7 @@ export const About = () => {
                                 </h3>
                                 <div className="space-y-4 text-gray-300 leading-relaxed">
                                     <p>
-                                        I'm a passionate Senior Frontend Developer with over <span className="text-cyan-400 font-semibold">5.6 years</span> of experience building
+                                        I'm a passionate Senior Frontend Developer with over <span className="text-cyan-400 font-semibold">5.9 years</span> of experience building
                                         scalable web applications across SaaS, automotive, and e-commerce domains. My expertise
                                         lies in React.js, TypeScript, and modern JavaScript.
                                     </p>
