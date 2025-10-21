@@ -19131,7 +19131,7 @@ const About = () => {
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-4 text-gray-300 leading-relaxed", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { children: [
             "I'm a passionate Senior Frontend Developer with over ",
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-cyan-400 font-semibold", children: "5.6 years" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-cyan-400 font-semibold", children: "5.9 years" }),
             " of experience building scalable web applications across SaaS, automotive, and e-commerce domains. My expertise lies in React.js, TypeScript, and modern JavaScript."
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { children: [
