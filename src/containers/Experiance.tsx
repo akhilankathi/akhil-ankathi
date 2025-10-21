@@ -15,7 +15,6 @@ export const Experiance = () => {
     const getProjectsListFunc = async () => {
         try {
             let response: any = await getExperianceList()
-            console.log(response)
             if (response && response?.data)
                 setExperianceList(response?.data)
         } catch (error) {
@@ -34,7 +33,7 @@ export const Experiance = () => {
 
     useEffect(() => {
         if (experianceList) {
-            setExperianceListState(experianceList)
+            setExperianceListState(experianceList ?? experiences)
         }
 
     }, [experianceList])
