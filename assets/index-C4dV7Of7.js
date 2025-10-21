@@ -32767,7 +32767,6 @@ const Experiance = () => {
   const getProjectsListFunc = async () => {
     try {
       let response = await getExperianceList();
-      console.log(response);
       if (response && response?.data)
         setExperianceList(response?.data);
     } catch (error) {
@@ -32782,7 +32781,7 @@ const Experiance = () => {
   }, []);
   useEffect$2(() => {
     if (experianceList) {
-      setExperianceListState(experianceList);
+      setExperianceListState(experianceList ?? experiences);
     }
   }, [experianceList]);
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "experience", className: "min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 py-20", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "container mx-auto px-6", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-6xl mx-auto", children: [
@@ -32910,7 +32909,7 @@ const Projects = () => {
   }, []);
   useEffect$1(() => {
     if (projectsList) {
-      setProjectsListState(projectsList);
+      setProjectsListState(projectsList ?? projects);
     }
   }, [projectsList]);
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "projects", className: "min-h-screen bg-gray-900 py-20", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "container mx-auto px-6", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-6xl mx-auto", children: [
