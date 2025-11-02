@@ -33,7 +33,7 @@ export const Experiance = () => {
 
     useEffect(() => {
         if (experianceList) {
-            setExperianceListState(experiences)
+            setExperianceListState(experianceList ?? experiences)
         }
 
     }, [experianceList])

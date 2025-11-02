@@ -37,7 +37,7 @@ export const Projects = () => {
 
     useEffect(() => {
         if (projectsList) {
-            setProjectsListState(projects)
+            setProjectsListState(projectsList ?? projects)
         }
 
     }, [projectsList])
