@@ -23026,7 +23026,7 @@ const {
 } = axios;
 
 const getExperianceList = () => {
-  const APIURL = "https://portfolio-backend-app-pvvf.onrender.com";
+  const APIURL = "https://portfoliobackendapp-production.up.railway.app";
   let result = axios.get(`${APIURL}/experiance`);
   try {
     return result.then((data) => {
@@ -23042,7 +23042,7 @@ const getExperianceList = () => {
 };
 
 const getProjectsList = () => {
-  const APIURL = "https://portfolio-backend-app-pvvf.onrender.com";
+  const APIURL = "https://portfoliobackendapp-production.up.railway.app";
   let result = axios.get(`${APIURL}/projects`);
   try {
     return result.then((data) => {
