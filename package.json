@@ -11,7 +11,10 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@ai-sdk/openai": "^2.0.59",
+    "@ai-sdk/react": "^2.0.86",
     "@tailwindcss/vite": "^4.1.11",
+    "ai": "^5.0.86",
     "axios": "^1.11.0",
     "framer-motion": "^12.23.12",
     "lucide-react": "^0.537.0",
