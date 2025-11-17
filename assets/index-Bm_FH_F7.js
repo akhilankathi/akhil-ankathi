@@ -19131,7 +19131,7 @@ const About = () => {
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-4 text-gray-300 leading-relaxed", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { children: [
             "I'm a passionate Senior Frontend Developer with over ",
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-cyan-400 font-semibold", children: "5.9 years" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-cyan-400 font-semibold", children: "6 years" }),
             " of experience building scalable web applications across SaaS, automotive, and e-commerce domains. My expertise lies in React.js, TypeScript, and modern JavaScript."
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { children: [
@@ -32987,7 +32987,7 @@ const Home = () => {
         /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xl md:text-2xl text-gray-300 mb-6", children: /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-purple-400 font-semibold", children: "Senior Frontend Developer" }) }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-lg text-gray-400 mb-8 leading-relaxed max-w-xl", children: [
           "Architecting scalable web applications with ",
-          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-cyan-400 font-semibold", children: "5.9+ years" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-cyan-400 font-semibold", children: "6+ years" }),
           " of expertise in React.js, TypeScript, and micro frontend architecture. Leading teams to deliver performance-optimized solutions."
         ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-wrap gap-4", children: [
