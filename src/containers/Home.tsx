@@ -56,7 +56,7 @@ export const Home = () => {
                             </p>
 
                             <p className="text-lg text-gray-400 mb-8 leading-relaxed max-w-xl">
-                                Architecting scalable web applications with <span className="text-cyan-400 font-semibold">5.9+ years</span> of expertise in React.js, TypeScript, and micro frontend architecture. Leading teams to deliver performance-optimized solutions.
+                                Architecting scalable web applications with <span className="text-cyan-400 font-semibold">6+ years</span> of expertise in React.js, TypeScript, and micro frontend architecture. Leading teams to deliver performance-optimized solutions.
                             </p>
 
                             <div className="flex flex-wrap gap-4">
