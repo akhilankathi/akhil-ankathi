@@ -19067,9 +19067,9 @@ function useViewTransitionState(to, { relative } = {}) {
 }
 await importShared('react');
 
-const {useState: useState$2} = await importShared('react');
+const {useState: useState$3} = await importShared('react');
 const NavigationBar = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState$2(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState$3(false);
   const navigate = useNavigate();
   const navItems = [
     { id: "home", label: "Home" },
@@ -32758,12 +32758,12 @@ const experiences = [
   }
 ];
 
-const {useEffect: useEffect$2,useState: useState$1} = await importShared('react');
+const {useEffect: useEffect$2,useState: useState$2} = await importShared('react');
 const Experiance = () => {
   const setExperianceList = useExperaince((state) => state.setExperianceList);
   const resetExperianceStore = useExperaince((state) => state.resetExperianceStore);
   const experianceList = useExperaince((state) => state.experianceList);
-  const [experianceListState, setExperianceListState] = useState$1(experiences);
+  const [experianceListState, setExperianceListState] = useState$2(experiences);
   const getProjectsListFunc = async () => {
     try {
       let response = await getExperianceList();
@@ -32885,12 +32885,12 @@ const projects = [
   }
 ];
 
-const {useEffect: useEffect$1,useState} = await importShared('react');
+const {useEffect: useEffect$1,useState: useState$1} = await importShared('react');
 const Projects = () => {
   const setProjectsList = useProjects((state) => state.setProjectsList);
   const resetProjectsStore = useProjects((state) => state.resetProjectsStore);
   const projectsList = useProjects((state) => state.projectsList);
-  const [projectsListState, setProjectsListState] = useState(projects);
+  const [projectsListState, setProjectsListState] = useState$1(projects);
   const getProjectsListFunc = async () => {
     try {
       let response = await getProjectsList();
@@ -32969,26 +32969,81 @@ const Home = () => {
   }, []);
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { id: "home", className: "min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 relative overflow-hidden max-w-full w-full left-0 right-0", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "absolute inset-0", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute top-20 left-10 w-72 h-72 bg-purple-500/10 rounded-full mix-blend-multiply filter blur-xl animate-pulse" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute top-40 right-10 w-72 h-72 bg-cyan-500/10 rounded-full mix-blend-multiply filter blur-xl animate-pulse delay-1000" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute -bottom-8 left-20 w-72 h-72 bg-pink-500/10 rounded-full mix-blend-multiply filter blur-xl animate-pulse delay-2000" })
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute top-20 left-10 w-96 h-96 bg-purple-500/20 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute top-40 right-10 w-96 h-96 bg-cyan-500/20 rounded-full mix-blend-multiply filter blur-3xl animate-pulse", style: { animationDelay: "1s" } }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute -bottom-8 left-20 w-96 h-96 bg-pink-500/20 rounded-full mix-blend-multiply filter blur-3xl animate-pulse", style: { animationDelay: "2s" } })
     ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "relative z-10 container px-6 py-32 min-h-screen flex items-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid lg:grid-cols-2 gap-12 items-center", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "inline-flex items-center px-4 py-2 bg-gradient-to-r from-purple-500/20 to-cyan-500/20 rounded-full mb-6 backdrop-blur-sm border border-white/10", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Sparkles, { className: "w-4 h-4 text-cyan-400 mr-2" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 overflow-hidden pointer-events-none", children: [...Array(20)].map((_, i) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+      "div",
+      {
+        className: "absolute w-1 h-1 bg-white rounded-full opacity-20",
+        style: {
+          left: `${Math.random() * 100}%`,
+          top: `${Math.random() * 100}%`,
+          animation: `float ${5 + Math.random() * 10}s ease-in-out infinite`,
+          animationDelay: `${Math.random() * 5}s`
+        }
+      },
+      i
+    )) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("style", { children: `
+                @keyframes float {
+                    0%, 100% { transform: translateY(0) translateX(0); }
+                    25% { transform: translateY(-20px) translateX(10px); }
+                    50% { transform: translateY(-40px) translateX(-10px); }
+                    75% { transform: translateY(-20px) translateX(5px); }
+                }
+                @keyframes glow {
+                    0%, 100% { box-shadow: 0 0 20px rgba(168, 85, 247, 0.4); }
+                    50% { box-shadow: 0 0 40px rgba(168, 85, 247, 0.8), 0 0 60px rgba(236, 72, 153, 0.4); }
+                }
+            ` }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "relative z-10 container mx-auto px-6 py-20 md:py-32 min-h-screen flex items-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-full", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid lg:grid-cols-2 gap-16 items-center", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "order-2 lg:order-1", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "inline-flex items-center px-4 py-2 bg-gradient-to-r from-purple-500/20 to-cyan-500/20 rounded-full mb-6 backdrop-blur-sm border border-white/10 hover:border-purple-400/50 transition-all duration-300", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(Sparkles, { className: "w-4 h-4 text-cyan-400 mr-2 animate-pulse" }),
           /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-cyan-300 text-sm font-medium", children: "Available for new opportunities" })
         ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("h1", { className: "text-5xl md:text-7xl font-bold mb-6 leading-tight", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-white", children: "Hi, I'm" }),
           /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent", children: "Akhil Ankathi" })
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent animate-pulse", children: "Akhil Ankathi" })
         ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xl md:text-2xl text-gray-300 mb-6", children: /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-purple-400 font-semibold", children: "Senior Frontend Developer" }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xl md:text-2xl text-gray-300 mb-4", children: /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-purple-400 font-semibold", children: "Senior Frontend Developer" }) }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-lg text-gray-400 mb-8 leading-relaxed max-w-xl", children: [
           "Architecting scalable web applications with ",
           /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-cyan-400 font-semibold", children: "6+ years" }),
           " of expertise in React.js, TypeScript, and micro frontend architecture. Leading teams to deliver performance-optimized solutions."
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex gap-4 mb-8", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "a",
+            {
+              href: "https://github.com/akhilankathi",
+              target: "_blank",
+              rel: "noopener noreferrer",
+              className: "w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-purple-500/20 hover:border-purple-400/50 transition-all duration-300",
+              children: /* @__PURE__ */ jsxRuntimeExports.jsx(Github, { className: "w-5 h-5 text-gray-400" })
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "a",
+            {
+              href: "https://www.linkedin.com/in/akhilvarmaankathi",
+              target: "_blank",
+              rel: "noopener noreferrer",
+              className: "w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-cyan-500/20 hover:border-cyan-400/50 transition-all duration-300",
+              children: /* @__PURE__ */ jsxRuntimeExports.jsx(Linkedin, { className: "w-5 h-5 text-gray-400" })
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "a",
+            {
+              href: "mailto:akhilankathi@gmail.com",
+              className: "w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-pink-500/20 hover:border-pink-400/50 transition-all duration-300",
+              children: /* @__PURE__ */ jsxRuntimeExports.jsx(Mail, { className: "w-5 h-5 text-gray-400" })
+            }
+          )
         ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-wrap gap-4", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs(
@@ -33015,28 +33070,50 @@ const Home = () => {
           )
         ] })
       ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "relative", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-2 gap-6", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-gradient-to-br from-purple-500/10 to-pink-500/10 backdrop-blur-sm border border-white/10 p-6 rounded-2xl hover:scale-105 transition-transform duration-300", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(TrendingUp, { className: "w-12 h-12 text-purple-400 mb-4" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-xl font-semibold text-white mb-2", children: "Performance Expert" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-400 text-sm", children: "30-40% performance gains through optimization" })
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative order-1 lg:order-2", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative mb-8 lg:mb-0", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative w-80 h-80 mx-auto", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 opacity-20 animate-pulse" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-2 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 opacity-20 animate-pulse", style: { animationDelay: "0.5s" } }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-4 rounded-full overflow-hidden border-4 border-white/10 shadow-2xl", style: { animation: "glow 3s ease-in-out infinite" }, children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-full h-full bg-gradient-to-br from-purple-600 via-pink-600 to-cyan-600 flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "img",
+              {
+                src: "https://media.licdn.com/dms/image/v2/D5603AQE9XfEEP-IOOg/profile-displayphoto-shrink_800_800/B56ZZgY4BAHUAg-/0/1745373858472?e=1766016000&v=beta&t=kGnHYvSnb9dRGygHvaYVd1elkvkeQDP81F_nupVYRho",
+                alt: "Akhil Ankathi",
+                className: "w-full h-full object-cover"
+              }
+            ) }) })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute right-20 top-12 bg-gradient-to-br from-purple-500/90 to-pink-500/90 backdrop-blur-sm px-3 py-2 rounded-full border border-white/20 shadow-xl animate-pulse", children: /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-white text-xs font-bold", children: "React.js" }) }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute left-16 top-12 bg-gradient-to-br from-cyan-500/90 to-blue-500/90 backdrop-blur-sm px-3 py-2 rounded-full border border-white/20 shadow-xl animate-pulse", style: { animationDelay: "0.5s" }, children: /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-white text-xs font-bold", children: "TypeScript" }) }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute right-16 top-40 bg-gradient-to-br from-pink-500/90 to-rose-500/90 backdrop-blur-sm px-3 py-2 rounded-full border border-white/20 shadow-xl animate-pulse", style: { animationDelay: "1s" }, children: /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-white text-xs font-bold", children: "Redux" }) }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute left-18 top-40 bg-gradient-to-br from-yellow-500/90 to-orange-500/90 backdrop-blur-sm px-3 py-2 rounded-full border border-white/20 shadow-xl animate-pulse", style: { animationDelay: "1.5s" }, children: /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-white text-xs font-bold", children: "Node.js" }) }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute right-24 bottom-16 bg-gradient-to-br from-indigo-500/90 to-purple-500/90 backdrop-blur-sm px-3 py-2 rounded-full border border-white/20 shadow-xl animate-pulse", style: { animationDelay: "2s" }, children: /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-white text-xs font-bold", children: "Vite" }) }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute left-12 bottom-16 bg-gradient-to-br from-green-500/90 to-emerald-500/90 backdrop-blur-sm px-3 py-2 rounded-full border border-white/20 shadow-xl animate-pulse", style: { animationDelay: "2.5s" }, children: /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-white text-xs font-bold", children: "JavaScript" }) })
         ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-gradient-to-br from-cyan-500/10 to-blue-500/10 backdrop-blur-sm border border-white/10 p-6 rounded-2xl hover:scale-105 transition-transform duration-300 mt-8", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Users, { className: "w-12 h-12 text-cyan-400 mb-4" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-xl font-semibold text-white mb-2", children: "Team Leader" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-400 text-sm", children: "Leading and mentoring 5+ developers" })
-        ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-gradient-to-br from-pink-500/10 to-purple-500/10 backdrop-blur-sm border border-white/10 p-6 rounded-2xl hover:scale-105 transition-transform duration-300 -mt-4", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Code, { className: "w-12 h-12 text-pink-400 mb-4" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-xl font-semibold text-white mb-2", children: "Architecture Focus" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-400 text-sm", children: "Micro frontend expertise" })
-        ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-gradient-to-br from-yellow-500/10 to-orange-500/10 backdrop-blur-sm border border-white/10 p-6 rounded-2xl hover:scale-105 transition-transform duration-300", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Award, { className: "w-12 h-12 text-yellow-400 mb-4" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-xl font-semibold text-white mb-2", children: "50k+ Users" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-400 text-sm", children: "Pixel-perfect applications" })
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-2 gap-4 mt-8", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-gradient-to-br from-purple-500/10 to-pink-500/10 backdrop-blur-sm border border-white/10 p-6 rounded-2xl hover:scale-105 hover:border-purple-400/50 transition-all duration-300", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(TrendingUp, { className: "w-10 h-10 text-purple-400" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-xl font-semibold text-white mb-2", children: "Performance Expert" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-400 text-sm", children: "30-40% performance gains through optimization" })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-gradient-to-br from-cyan-500/10 to-blue-500/10 backdrop-blur-sm border border-white/10 p-6 rounded-2xl hover:scale-105 transition-transform duration-300 mt-4", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(Users, { className: "w-12 h-12 text-cyan-400 mb-4" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-xl font-semibold text-white mb-2", children: "Team Leader" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-400 text-sm", children: "Leading and mentoring 5+ developers" })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-gradient-to-br from-pink-500/10 to-purple-500/10 backdrop-blur-sm border border-white/10 p-6 rounded-2xl hover:scale-105 transition-transform duration-300 mt-4", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(Code, { className: "w-12 h-12 text-pink-400 mb-4" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-xl font-semibold text-white mb-2", children: "Architecture Focus" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-400 text-sm", children: "Micro frontend expertise" })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-gradient-to-br from-yellow-500/10 to-orange-500/10 backdrop-blur-sm border border-white/10 p-6 rounded-2xl hover:scale-105 transition-transform duration-300 mt-4", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(Award, { className: "w-12 h-12 text-yellow-400 mb-4" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-xl font-semibold text-white mb-2", children: "50k+ Users" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-400 text-sm", children: "Pixel-perfect applications" })
+          ] })
         ] })
-      ] }) })
+      ] })
     ] }) }) })
   ] });
 };
@@ -33152,6 +33229,32 @@ const Footer = () => {
   ] }) }) });
 };
 
+const {useState} = await importShared('react');
+
+const ProgressBarComp = () => {
+  const [bars, setBars] = useState([]);
+  const handleStartProgress = () => {
+    let number = 0;
+    if (bars.length > 5) return;
+    setInterval(() => {
+      setBars([
+        ...bars,
+        {
+          key: Date.now(),
+          value: number++
+        }
+      ]);
+    }, 1e3);
+  };
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mt-[100px]", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("button", { onClick: handleStartProgress, children: "Start Progress" }),
+    bars.map((item) => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+      " ",
+      item.value
+    ] }))
+  ] });
+};
+
 function App() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "min-h-screen bg-gray-900 w-full", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(NavigationBar, {}),
@@ -33162,7 +33265,8 @@ function App() {
       /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "experience", element: /* @__PURE__ */ jsxRuntimeExports.jsx(Experiance, {}) }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "projects", element: /* @__PURE__ */ jsxRuntimeExports.jsx(Projects, {}) }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "contact", element: /* @__PURE__ */ jsxRuntimeExports.jsx(Contact, {}) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "skills", element: /* @__PURE__ */ jsxRuntimeExports.jsx(Skills, {}) })
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "skills", element: /* @__PURE__ */ jsxRuntimeExports.jsx(Skills, {}) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "progressdemo", element: /* @__PURE__ */ jsxRuntimeExports.jsx(ProgressBarComp, {}) })
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsx(Footer, {})
   ] });
