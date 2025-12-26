@@ -9,8 +9,7 @@ import { experiences } from "../constants/Experiance"
 export const Experiance = () => {
     const setExperianceList = useExperaince((state: any) => state.setExperianceList)
     const resetExperianceStore = useExperaince((state: any) => state.resetExperianceStore)
-    const experianceList = useExperaince((state: any) => state.experianceList)
-    const [experianceListState, setExperianceListState] = useState<Experience[]>(experiences)
+    const [experianceListState] = useState<Experience[]>(experiences)
 
     const getProjectsListFunc = async () => {
         try {

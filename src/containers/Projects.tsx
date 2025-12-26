@@ -12,8 +12,7 @@ export const Projects = () => {
     // const navigate = useNavigate()
     const setProjectsList = useProjects((state: any) => state.setProjectsList)
     const resetProjectsStore = useProjects((state: any) => state.resetProjectsStore)
-    const projectsList = useProjects((state: any) => state.projectsList)
-    const [projectsListState, setProjectsListState] = useState<Project[]>(projects)
+    const [projectsListState] = useState<Project[]>(projects)
 
     const getProjectsListFunc = async () => {
         try {
