@@ -32762,8 +32762,7 @@ const {useEffect: useEffect$2,useState: useState$2} = await importShared('react'
 const Experiance = () => {
   const setExperianceList = useExperaince((state) => state.setExperianceList);
   const resetExperianceStore = useExperaince((state) => state.resetExperianceStore);
-  const experianceList = useExperaince((state) => state.experianceList);
-  const [experianceListState, setExperianceListState] = useState$2(experiences);
+  const [experianceListState] = useState$2(experiences);
   const getProjectsListFunc = async () => {
     try {
       let response = await getExperianceList();
@@ -32779,9 +32778,6 @@ const Experiance = () => {
       resetExperianceStore();
     };
   }, []);
-  useEffect$2(() => {
-    setExperianceListState(experianceList ?? experiences);
-  }, [experianceList]);
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "experience", className: "min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 py-20", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "container mx-auto px-6", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-6xl mx-auto", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center mb-16", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsxs("h2", { className: "text-4xl md:text-5xl font-bold text-white mb-4", children: [
@@ -32887,8 +32883,7 @@ const {useEffect: useEffect$1,useState: useState$1} = await importShared('react'
 const Projects = () => {
   const setProjectsList = useProjects((state) => state.setProjectsList);
   const resetProjectsStore = useProjects((state) => state.resetProjectsStore);
-  const projectsList = useProjects((state) => state.projectsList);
-  const [projectsListState, setProjectsListState] = useState$1(projects);
+  const [projectsListState] = useState$1(projects);
   const getProjectsListFunc = async () => {
     try {
       let response = await getProjectsList();
@@ -32905,9 +32900,6 @@ const Projects = () => {
       resetProjectsStore();
     };
   }, []);
-  useEffect$1(() => {
-    setProjectsListState(projectsList ?? projects);
-  }, [projectsList]);
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "projects", className: "min-h-screen bg-gray-900 py-20", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "container mx-auto px-6", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-6xl mx-auto", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center mb-16", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsxs("h2", { className: "text-4xl md:text-5xl font-bold text-white mb-4", children: [
