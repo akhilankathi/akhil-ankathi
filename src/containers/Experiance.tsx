@@ -31,10 +31,7 @@ export const Experiance = () => {
         }
     }, [])
 
-    useEffect(() => {
-            setExperianceListState(experianceList ?? experiences)
 
-    }, [experianceList])
     return (
         <div id="experience" className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 py-20">
             <div className="container mx-auto px-6">

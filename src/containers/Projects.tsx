@@ -35,10 +35,6 @@ export const Projects = () => {
         }
     }, [])
 
-    useEffect(() => {
-            setProjectsListState(projectsList ?? projects)
-
-    }, [projectsList])
 
 
     return (
