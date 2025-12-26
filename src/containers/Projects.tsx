@@ -36,9 +36,7 @@ export const Projects = () => {
     }, [])
 
     useEffect(() => {
-        if (projectsList) {
             setProjectsListState(projectsList ?? projects)
-        }
 
     }, [projectsList])
 
