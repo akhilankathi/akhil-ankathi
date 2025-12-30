@@ -32878,6 +32878,53 @@ const projects = [
     technologies: ["React.js", "Redux Toolkit", "Zoom Web SDK", "Stripe API", "JavaScript"]
   }
 ];
+const personalProjects = [
+  {
+    name: "Frontend Learning Hub",
+    url: "https://frontendlearninghub.netlify.app/",
+    duration: "Personal Project · 2024",
+    description: "A curated platform for frontend developers to learn React, JavaScript, UI engineering, and interview concepts in a structured way.",
+    highlights: [
+      "Built a scalable, config-driven resource system",
+      "Implemented lightweight global state using Zustand & Redux patterns",
+      "Optimized UI performance and component reusability",
+      "Focused on clean UX for self-paced learning"
+    ],
+    technologies: [
+      "React",
+      "Vite",
+      "TypeScript",
+      "Redux",
+      "Zustand",
+      "Tailwind CSS",
+      "Lucide-react",
+      "React Router",
+      "Netlify"
+    ]
+  },
+  {
+    name: "Avicii Music App",
+    duration: "Personal Project · 2023",
+    url: "https://avicii-eight.vercel.app",
+    description: "A Spotify-inspired tribute music app designed to deliver immersive UI, smooth animations, and playlist-driven user experience.",
+    highlights: [
+      "Designed animation-heavy UI with smooth transitions",
+      "Handled complex UI state for media-driven interactions",
+      "Built reusable layout and navigation components",
+      "Focused on visual polish and UX consistency"
+    ],
+    technologies: [
+      "React",
+      "Vite",
+      "Redux",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Lucide-react",
+      "Context API",
+      "Vercel"
+    ]
+  }
+];
 
 const {useEffect: useEffect$1,useState: useState$1} = await importShared('react');
 const Projects = () => {
@@ -32900,46 +32947,98 @@ const Projects = () => {
       resetProjectsStore();
     };
   }, []);
-  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "projects", className: "min-h-screen bg-gray-900 py-20", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "container mx-auto px-6", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-6xl mx-auto", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center mb-16", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("h2", { className: "text-4xl md:text-5xl font-bold text-white mb-4", children: [
-        "Featured ",
-        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent", children: "Projects" })
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { id: "projects", className: "min-h-screen bg-gray-900 py-20", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "container mx-auto px-6 pt-5", children: [
+    "                    ",
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mb-12 max-w-6xl mx-auto", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center mb-16", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("h2", { className: "text-4xl md:text-5xl font-bold text-white mb-4", children: [
+          "Personal",
+          " ",
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent", children: "Projects" })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-400 max-w-2xl mx-auto", children: "End-to-end products I built independently to explore frontend architecture, UI engineering, and modern tooling." })
       ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-24 h-1 bg-gradient-to-r from-purple-500 to-cyan-500 mx-auto" })
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid lg:grid-cols-2 gap-8", children: personalProjects.map((project, index) => /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "group", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-gradient-to-br from-pink-500/10 via-transparent to-purple-500/10 backdrop-blur-sm border border-white/10 rounded-3xl p-8 hover:scale-[1.02] hover:border-pink-500/30 transition-all duration-500 h-full", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mb-6", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between mb-4", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-2xl font-bold text-white group-hover:text-pink-300 transition-colors", children: project.name }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "p-2 bg-gradient-to-br from-pink-500/20 to-purple-500/20 rounded-xl", children: /* @__PURE__ */ jsxRuntimeExports.jsx(ExternalLink, { className: "w-5 h-5 text-pink-400 cursor-pointer", onClick: () => window.open(project.url, "_blank") }) })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-pink-400 font-medium mb-4 flex items-center", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(Calendar, { className: "w-4 h-4 mr-2" }),
+            project.duration
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-300 leading-relaxed", children: project.description })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mb-6", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("h4", { className: "font-semibold text-white mb-4 flex items-center", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(Sparkles, { className: "w-4 h-4 mr-2 text-yellow-400" }),
+            "Key Highlights"
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-3", children: project.highlights.map((highlight, idx) => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-2 h-2 bg-gradient-to-r from-pink-400 to-purple-400 rounded-full mt-2 mr-3 flex-shrink-0" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-400 text-sm leading-relaxed", children: highlight })
+          ] }, idx)) })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("h4", { className: "font-semibold text-white mb-4 flex items-center", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(Code, { className: "w-4 h-4 mr-2 text-pink-400" }),
+            "Technologies"
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex flex-wrap gap-2", children: project.technologies.map((tech, idx) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "span",
+            {
+              className: "bg-gradient-to-r from-pink-500/20 to-purple-500/20 border border-pink-500/30 text-pink-300 px-3 py-1.5 rounded-xl text-sm font-medium backdrop-blur-sm hover:scale-105 transition-transform",
+              children: tech
+            },
+            idx
+          )) })
+        ] })
+      ] }) }, index)) })
     ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid lg:grid-cols-2 gap-8", children: projectsListState ? projectsListState?.map((project, index) => /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "group", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-gradient-to-br from-purple-500/10 via-transparent to-cyan-500/10 backdrop-blur-sm border border-white/10 rounded-3xl p-8 hover:scale-[1.02] hover:border-purple-500/30 transition-all duration-500 h-full", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mb-6", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between mb-4", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-2xl font-bold text-white group-hover:text-purple-300 transition-colors", children: project.name }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "p-2 bg-gradient-to-br from-purple-500/20 to-cyan-500/20 rounded-xl", children: /* @__PURE__ */ jsxRuntimeExports.jsx(ExternalLink, { className: "w-5 h-5 text-purple-400" }) })
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-6xl mx-auto", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center mb-16", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("h2", { className: "text-4xl md:text-5xl font-bold text-white mb-4", children: [
+          "Featured ",
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent", children: "Projects" })
         ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-cyan-400 font-medium mb-4 flex items-center", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Calendar, { className: "w-4 h-4 mr-2" }),
-          project.duration
-        ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-300 leading-relaxed", children: project.description })
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-24 h-1 bg-gradient-to-r from-purple-500 to-cyan-500 mx-auto" })
       ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mb-6", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("h4", { className: "font-semibold text-white mb-4 flex items-center", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Sparkles, { className: "w-4 h-4 mr-2 text-yellow-400" }),
-          "Key Highlights"
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid lg:grid-cols-2 gap-8", children: projectsListState ? projectsListState?.map((project, index) => /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "group", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-gradient-to-br from-purple-500/10 via-transparent to-cyan-500/10 backdrop-blur-sm border border-white/10 rounded-3xl p-8 hover:scale-[1.02] hover:border-purple-500/30 transition-all duration-500 h-full", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mb-6", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between mb-4", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-2xl font-bold text-white group-hover:text-purple-300 transition-colors", children: project.name }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "p-2 bg-gradient-to-br from-purple-500/20 to-cyan-500/20 rounded-xl", children: /* @__PURE__ */ jsxRuntimeExports.jsx(ExternalLink, { className: "w-5 h-5 text-purple-400" }) })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-cyan-400 font-medium mb-4 flex items-center", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(Calendar, { className: "w-4 h-4 mr-2" }),
+            project.duration
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-300 leading-relaxed", children: project.description })
         ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-3", children: project.highlights.map((highlight, idx) => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-2 h-2 bg-gradient-to-r from-green-400 to-emerald-400 rounded-full mt-2 mr-3 flex-shrink-0" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-400 text-sm leading-relaxed", children: highlight })
-        ] }, idx)) })
-      ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("h4", { className: "font-semibold text-white mb-4 flex items-center", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Code, { className: "w-4 h-4 mr-2 text-purple-400" }),
-          "Technologies"
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mb-6", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("h4", { className: "font-semibold text-white mb-4 flex items-center", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(Sparkles, { className: "w-4 h-4 mr-2 text-yellow-400" }),
+            "Key Highlights"
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-3", children: project.highlights.map((highlight, idx) => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-2 h-2 bg-gradient-to-r from-green-400 to-emerald-400 rounded-full mt-2 mr-3 flex-shrink-0" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-400 text-sm leading-relaxed", children: highlight })
+          ] }, idx)) })
         ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex flex-wrap gap-2", children: project.technologies.map((tech, idx) => /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "bg-gradient-to-r from-purple-500/20 to-cyan-500/20 border border-purple-500/30 text-purple-300 px-3 py-1.5 rounded-xl text-sm font-medium backdrop-blur-sm hover:scale-105 transition-transform", children: tech }, idx)) })
-      ] })
-    ] }) }, index)) : /* @__PURE__ */ jsxRuntimeExports.jsx(Loader, {}) })
-  ] }) }) });
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("h4", { className: "font-semibold text-white mb-4 flex items-center", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(Code, { className: "w-4 h-4 mr-2 text-purple-400" }),
+            "Technologies"
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex flex-wrap gap-2", children: project.technologies.map((tech, idx) => /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "bg-gradient-to-r from-purple-500/20 to-cyan-500/20 border border-purple-500/30 text-purple-300 px-3 py-1.5 rounded-xl text-sm font-medium backdrop-blur-sm hover:scale-105 transition-transform", children: tech }, idx)) })
+        ] })
+      ] }) }, index)) : /* @__PURE__ */ jsxRuntimeExports.jsx(Loader, {}) })
+    ] })
+  ] }) });
 };
+
+const MYProfile = ""+new URL('akhil_profile-DupH2-HI.jpg', import.meta.url).href+"";
 
 const {useEffect} = await importShared('react');
 const Home = () => {
@@ -32986,7 +33085,7 @@ const Home = () => {
                     50% { box-shadow: 0 0 40px rgba(168, 85, 247, 0.8), 0 0 60px rgba(236, 72, 153, 0.4); }
                 }
             ` }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "relative z-10 container mx-auto px-6 py-20 md:py-32 min-h-screen flex items-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-full", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid lg:grid-cols-2 gap-16 items-center", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "relative z-10 container mx-auto px-6 py-10 md:pt-32 min-h-screen flex items-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-full", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid lg:grid-cols-2 gap-16 items-center", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "order-2 lg:order-1", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "inline-flex items-center px-4 py-2 bg-gradient-to-r from-purple-500/20 to-cyan-500/20 rounded-full mb-6 backdrop-blur-sm border border-white/10 hover:border-purple-400/50 transition-all duration-300", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx(Sparkles, { className: "w-4 h-4 text-cyan-400 mr-2 animate-pulse" }),
@@ -33066,7 +33165,7 @@ const Home = () => {
             /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-4 rounded-full overflow-hidden border-4 border-white/10 shadow-2xl", style: { animation: "glow 3s ease-in-out infinite" }, children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-full h-full bg-gradient-to-br from-purple-600 via-pink-600 to-cyan-600 flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
               "img",
               {
-                src: "https://media.licdn.com/dms/image/v2/D5603AQE9XfEEP-IOOg/profile-displayphoto-shrink_800_800/B56ZZgY4BAHUAg-/0/1745373858472?e=1766016000&v=beta&t=kGnHYvSnb9dRGygHvaYVd1elkvkeQDP81F_nupVYRho",
+                src: MYProfile,
                 alt: "Akhil Ankathi",
                 className: "w-full h-full object-cover"
               }
@@ -33102,7 +33201,98 @@ const Home = () => {
           ] })
         ] })
       ] })
-    ] }) }) })
+    ] }) }) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { className: "relative z-10 container mx-auto px-6 pb-28", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center mb-20", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-4xl md:text-6xl font-bold mb-6", children: /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent", children: "Personal Products" }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-400 max-w-2xl mx-auto text-lg", children: "Carefully crafted side projects that showcase real-world frontend architecture, UI engineering, and modern tooling." })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid lg:grid-cols-2 gap-12", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "group relative rounded-3xl p-[1px] bg-gradient-to-br from-cyan-400/40 via-purple-400/40 to-pink-400/40 hover:scale-[1.02] transition-all duration-300", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "h-full backdrop-blur-xl rounded-3xl p-10 border border-white/10", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-3xl font-semibold text-white mb-4", children: "Frontend Learning Hub" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-400 leading-relaxed mb-6", children: "A curated learning platform for frontend developers to master React, JavaScript, UI engineering, and interview concepts — all structured in one clean, searchable experience." }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mb-8", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm uppercase tracking-wider text-gray-400 mb-3", children: "Tech Stack" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex flex-wrap gap-2", children: [
+              "React",
+              "Vite",
+              "TypeScript",
+              "Redux",
+              "Zustand",
+              "Tailwind CSS",
+              "Lucide-react",
+              "React Router",
+              "Netlify"
+            ].map((tech) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "span",
+              {
+                className: "px-3 py-1 text-xs rounded-full bg-white/10 text-gray-300 border border-white/10 hover:bg-cyan-400/20 hover:border-cyan-400/40 transition",
+                children: tech
+              },
+              tech
+            )) })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-sm text-gray-400 mb-8", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-white font-semibold", children: "Focus:" }),
+            " Scalable component architecture, lightweight global state, performance-first rendering, and clean developer experience."
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            "a",
+            {
+              href: "https://frontendlearninghub.netlify.app/",
+              target: "_blank",
+              rel: "noopener noreferrer",
+              className: "inline-flex items-center text-cyan-400 font-semibold hover:underline",
+              children: [
+                "Explore Product",
+                /* @__PURE__ */ jsxRuntimeExports.jsx(ArrowRight, { className: "ml-2 w-4 h-4" })
+              ]
+            }
+          )
+        ] }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "group relative rounded-3xl p-[1px] bg-gradient-to-br from-pink-400/40 via-purple-400/40 to-indigo-400/40 hover:scale-[1.02] transition-all duration-300", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "h-full  backdrop-blur-xl rounded-3xl p-10 border border-white/10", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-3xl font-semibold text-white mb-4", children: "Avicii Music App" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-400 leading-relaxed mb-6", children: "A Spotify-inspired tribute music app built to deliver immersive UI, smooth animations, and playlist-driven navigation with a strong visual identity." }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mb-8", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm uppercase tracking-wider text-gray-400 mb-3", children: "Tech Stack" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex flex-wrap gap-2", children: [
+              "React",
+              "Vite",
+              "Tailwind CSS",
+              "Redux",
+              "Framer Motion",
+              "Lucide-react",
+              "Context API",
+              "Vercel"
+            ].map((tech) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "span",
+              {
+                className: "px-3 py-1 text-xs rounded-full bg-white/10 text-gray-300 border border-white/10 hover:bg-pink-400/20 hover:border-pink-400/40 transition",
+                children: tech
+              },
+              tech
+            )) })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-sm text-gray-400 mb-8", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-white font-semibold", children: "Focus:" }),
+            " Animation-heavy UI, route-based flows, visual polish, and managing complex UI state for media-driven experiences."
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            "a",
+            {
+              href: "https://avicii-eight.vercel.app",
+              target: "_blank",
+              rel: "noopener noreferrer",
+              className: "inline-flex items-center text-pink-400 font-semibold hover:underline",
+              children: [
+                "Explore Product",
+                /* @__PURE__ */ jsxRuntimeExports.jsx(ArrowRight, { className: "ml-2 w-4 h-4" })
+              ]
+            }
+          )
+        ] }) })
+      ] })
+    ] })
   ] });
 };
 
