@@ -1,7 +1,8 @@
-import { ArrowRight, Award, Code, Download, Sparkles, TrendingUp, Users,Github, Linkedin, Mail } from "lucide-react"
+import { ArrowRight, Award, Code, Download, Sparkles, TrendingUp, Users, Github, Linkedin, Mail } from "lucide-react"
 import { useEffect } from "react";
 import { useNavigate } from "react-router";
 import { getProjectsList } from "../services/projects.service";
+import MYProfile from '../assets/akhil_profile.jpg';
 
 export const Home = () => {
     const navigate = useNavigate()
@@ -64,7 +65,7 @@ export const Home = () => {
                 }
             `}</style>
 
-            <div className="relative z-10 container mx-auto px-6 py-20 md:py-32 min-h-screen flex items-center">
+            <div className="relative z-10 container mx-auto px-6 py-10 md:pt-32 min-h-screen flex items-center">
                 <div className="w-full">
                     <div className="grid lg:grid-cols-2 gap-16 items-center">
                         {/* Left side - Content */}
@@ -92,16 +93,16 @@ export const Home = () => {
 
                             {/* Social links */}
                             <div className="flex gap-4 mb-8">
-                                <a href="https://github.com/akhilankathi" target="_blank" rel="noopener noreferrer" 
-                                   className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-purple-500/20 hover:border-purple-400/50 transition-all duration-300">
+                                <a href="https://github.com/akhilankathi" target="_blank" rel="noopener noreferrer"
+                                    className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-purple-500/20 hover:border-purple-400/50 transition-all duration-300">
                                     <Github className="w-5 h-5 text-gray-400" />
                                 </a>
                                 <a href="https://www.linkedin.com/in/akhilvarmaankathi" target="_blank" rel="noopener noreferrer"
-                                   className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-cyan-500/20 hover:border-cyan-400/50 transition-all duration-300">
+                                    className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-cyan-500/20 hover:border-cyan-400/50 transition-all duration-300">
                                     <Linkedin className="w-5 h-5 text-gray-400" />
                                 </a>
                                 <a href="mailto:akhilankathi@gmail.com"
-                                   className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-pink-500/20 hover:border-pink-400/50 transition-all duration-300">
+                                    className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-pink-500/20 hover:border-pink-400/50 transition-all duration-300">
                                     <Mail className="w-5 h-5 text-gray-400" />
                                 </a>
                             </div>
@@ -132,25 +133,25 @@ export const Home = () => {
                                     {/* Animated rings */}
                                     <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 opacity-20 animate-pulse"></div>
                                     <div className="absolute inset-2 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 opacity-20 animate-pulse" style={{ animationDelay: '0.5s' }}></div>
-                                    
+
                                     {/* Image container with glow effect */}
                                     <div className="absolute inset-4 rounded-full overflow-hidden border-4 border-white/10 shadow-2xl" style={{ animation: 'glow 3s ease-in-out infinite' }}>
                                         {/* Replace this with your actual image */}
                                         <div className="w-full h-full bg-gradient-to-br from-purple-600 via-pink-600 to-cyan-600 flex items-center justify-center">
                                             {/* <span className="text-white text-6xl font-bold">AA</span> */}
-                                        
-                                        {/* Uncomment below and add your image */}
-                                        <img 
-                                            src="https://media.licdn.com/dms/image/v2/D5603AQE9XfEEP-IOOg/profile-displayphoto-shrink_800_800/B56ZZgY4BAHUAg-/0/1745373858472?e=1766016000&v=beta&t=kGnHYvSnb9dRGygHvaYVd1elkvkeQDP81F_nupVYRho" 
-                                            alt="Akhil Ankathi"
-                                            className="w-full h-full object-cover"
-                                        />
+
+                                            {/* Uncomment below and add your image */}
+                                            <img
+                                                src={MYProfile}
+                                                alt="Akhil Ankathi"
+                                                className="w-full h-full object-cover"
+                                            />
                                         </div>
                                     </div>
                                 </div>
 
                                 {/* Floating badges */}
-                                        <div className="absolute right-20 top-12 bg-gradient-to-br from-purple-500/90 to-pink-500/90 backdrop-blur-sm px-3 py-2 rounded-full border border-white/20 shadow-xl animate-pulse">
+                                <div className="absolute right-20 top-12 bg-gradient-to-br from-purple-500/90 to-pink-500/90 backdrop-blur-sm px-3 py-2 rounded-full border border-white/20 shadow-xl animate-pulse">
                                     <p className="text-white text-xs font-bold">React.js</p>
                                 </div>
                                 <div className="absolute left-16 top-12 bg-gradient-to-br from-cyan-500/90 to-blue-500/90 backdrop-blur-sm px-3 py-2 rounded-full border border-white/20 shadow-xl animate-pulse" style={{ animationDelay: '0.5s' }}>
@@ -200,6 +201,148 @@ export const Home = () => {
                     </div>
                 </div>
             </div>
+
+{/* ================= Personal Products Section ================= */}
+<section className="relative z-10 container mx-auto px-6 pb-28">
+  {/* Section Header */}
+  <div className="text-center mb-20">
+    <h2 className="text-4xl md:text-6xl font-bold mb-6">
+      <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">
+        Personal Products
+      </span>
+    </h2>
+    <p className="text-gray-400 max-w-2xl mx-auto text-lg">
+      Carefully crafted side projects that showcase real-world frontend
+      architecture, UI engineering, and modern tooling.
+    </p>
+  </div>
+
+  <div className="grid lg:grid-cols-2 gap-12">
+    {/* ================= Frontend Learning Hub ================= */}
+    <div className="group relative rounded-3xl p-[1px] bg-gradient-to-br from-cyan-400/40 via-purple-400/40 to-pink-400/40 hover:scale-[1.02] transition-all duration-300">
+      <div className="h-full backdrop-blur-xl rounded-3xl p-10 border border-white/10">
+        {/* Title */}
+        <h3 className="text-3xl font-semibold text-white mb-4">
+          Frontend Learning Hub
+        </h3>
+
+        {/* Description */}
+        <p className="text-gray-400 leading-relaxed mb-6">
+          A curated learning platform for frontend developers to master React,
+          JavaScript, UI engineering, and interview concepts — all structured in
+          one clean, searchable experience.
+        </p>
+
+        {/* Tech Stack */}
+        <div className="mb-8">
+          <p className="text-sm uppercase tracking-wider text-gray-400 mb-3">
+            Tech Stack
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {[
+              "React",
+              "Vite",
+              "TypeScript",
+              "Redux",
+              "Zustand",
+              "Tailwind CSS",
+              "Lucide-react",
+              "React Router",
+              "Netlify",
+            ].map((tech) => (
+              <span
+                key={tech}
+                className="px-3 py-1 text-xs rounded-full bg-white/10 text-gray-300 border border-white/10 hover:bg-cyan-400/20 hover:border-cyan-400/40 transition"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        {/* Value / Learnings */}
+        <p className="text-sm text-gray-400 mb-8">
+          <span className="text-white font-semibold">Focus:</span> Scalable
+          component architecture, lightweight global state, performance-first
+          rendering, and clean developer experience.
+        </p>
+
+        {/* CTA */}
+        <a
+          href="https://frontendlearninghub.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center text-cyan-400 font-semibold hover:underline"
+        >
+          Explore Product
+          <ArrowRight className="ml-2 w-4 h-4" />
+        </a>
+      </div>
+    </div>
+
+    {/* ================= Avicii Music App ================= */}
+    <div className="group relative rounded-3xl p-[1px] bg-gradient-to-br from-pink-400/40 via-purple-400/40 to-indigo-400/40 hover:scale-[1.02] transition-all duration-300">
+      <div className="h-full  backdrop-blur-xl rounded-3xl p-10 border border-white/10">
+        {/* Title */}
+        <h3 className="text-3xl font-semibold text-white mb-4">
+          Avicii Music App
+        </h3>
+
+        {/* Description */}
+        <p className="text-gray-400 leading-relaxed mb-6">
+          A Spotify-inspired tribute music app built to deliver immersive UI,
+          smooth animations, and playlist-driven navigation with a strong visual
+          identity.
+        </p>
+
+        {/* Tech Stack */}
+        <div className="mb-8">
+          <p className="text-sm uppercase tracking-wider text-gray-400 mb-3">
+            Tech Stack
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {[
+              "React",
+              "Vite",
+              "Tailwind CSS",
+              "Redux",
+              "Framer Motion",
+              "Lucide-react",
+              "Context API",
+              "Vercel",
+            ].map((tech) => (
+              <span
+                key={tech}
+                className="px-3 py-1 text-xs rounded-full bg-white/10 text-gray-300 border border-white/10 hover:bg-pink-400/20 hover:border-pink-400/40 transition"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        {/* Value / Learnings */}
+        <p className="text-sm text-gray-400 mb-8">
+          <span className="text-white font-semibold">Focus:</span> Animation-heavy
+          UI, route-based flows, visual polish, and managing complex UI state for
+          media-driven experiences.
+        </p>
+
+        {/* CTA */}
+        <a
+          href="https://avicii-eight.vercel.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center text-pink-400 font-semibold hover:underline"
+        >
+          Explore Product
+          <ArrowRight className="ml-2 w-4 h-4" />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
         </div>
     )
 }

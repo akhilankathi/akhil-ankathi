@@ -68,3 +68,54 @@ export const projects: Project[] = [
     technologies: ["React.js", "Redux Toolkit", "Zoom Web SDK", "Stripe API", "JavaScript"]
   }
 ];
+
+
+export const personalProjects = [
+  {
+    name: "Frontend Learning Hub",
+    url: "https://frontendlearninghub.netlify.app/",
+    duration: "Personal Project · 2024",
+    description:
+      "A curated platform for frontend developers to learn React, JavaScript, UI engineering, and interview concepts in a structured way.",
+    highlights: [
+      "Built a scalable, config-driven resource system",
+      "Implemented lightweight global state using Zustand & Redux patterns",
+      "Optimized UI performance and component reusability",
+      "Focused on clean UX for self-paced learning",
+    ],
+    technologies: [
+      "React",
+      "Vite",
+      "TypeScript",
+      "Redux",
+      "Zustand",
+      "Tailwind CSS",
+      "Lucide-react",
+      "React Router",
+      "Netlify",
+    ],
+  },
+  {
+    name: "Avicii Music App",
+    duration: "Personal Project · 2023",
+    url: "https://avicii-eight.vercel.app",
+    description:
+      "A Spotify-inspired tribute music app designed to deliver immersive UI, smooth animations, and playlist-driven user experience.",
+    highlights: [
+      "Designed animation-heavy UI with smooth transitions",
+      "Handled complex UI state for media-driven interactions",
+      "Built reusable layout and navigation components",
+      "Focused on visual polish and UX consistency",
+    ],
+    technologies: [
+      "React",
+      "Vite",
+      "Redux",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Lucide-react",
+      "Context API",
+      "Vercel",
+    ],
+  },
+]
