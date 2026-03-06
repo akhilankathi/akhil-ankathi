@@ -19178,6 +19178,107 @@ const About = () => {
           ] }, index)) })
         ] })
       ] })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "personal-life-section", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "personal-life-header", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "pl-line" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "pl-label", children: "Beyond the Screen" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "pl-line" })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "personal-life-grid", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "pl-card pl-travel", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "pl-card-top", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "pl-big-icon", children: "✈️" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "pl-card-title", children: "Travel Lover" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "pl-card-sub", children: "Explorer at heart" })
+            ] })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "pl-card-desc", children: [
+            "Every trip rewires the way I think. Whether it's the chaos of a new city or the silence of a mountain trail — travel fuels my creativity and makes me a better problem-solver. I collect ",
+            /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: "experiences" }),
+            ", not souvenirs."
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "pl-tags", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "pl-tag", children: "🏔️ Mountains" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "pl-tag", children: "🌊 Beaches" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "pl-tag", children: "🌆 City Vibes" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "pl-tag", children: "🌿 Nature" })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "pl-quote", children: '"The world is a book — I refuse to read just one page."' })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "pl-card pl-music", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "pl-card-top", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "pl-big-icon", children: "🎵" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "pl-card-title", children: "Music Soul" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "pl-card-sub", children: "EDM · Electronic · Progressive" })
+            ] })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "pl-card-desc", children: [
+            "Music isn't background noise — it's ",
+            /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: "fuel" }),
+            ". My best code gets written when Avicii or Martin Garrix is playing. The way a drop hits is the same feeling I chase when a UI animation lands perfectly."
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "pl-artists", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "pl-artist", children: "🎹 Avicii" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "pl-artist", children: "🎧 Martin Garrix" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "pl-artist", children: "🎼 Tiësto" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "pl-artist", children: "🔊 Hardwell" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "pl-artist", children: "🔥 Swedish House Mafia" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "pl-artist", children: "🎶 Armin van Buuren" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "pl-artist", children: "⚡ Dimitri Vegas & Like Mike" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "pl-artist", children: "🎛 Steve Aoki" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "pl-artist", children: "💥 Skrillex" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "pl-artist", children: "🌌 Alan Walker" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "pl-artist", children: "🎤 Calvin Harris" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "pl-artist", children: "🎵 Gryffin" })
+          ] })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "pl-card pl-dj", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "pl-card-top", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "pl-big-icon", children: "🎛️" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "pl-card-title", children: "Aspiring DJ" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "pl-card-sub", children: "The dream is in progress 🔥" })
+            ] })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "pl-card-desc", children: [
+            "My ",
+            /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: "ultimate dream" }),
+            " is to stand behind the decks and move a crowd. Inspired by legends like Avicii and Garrix, I believe technology and music are two sides of the same coin — both about creating an ",
+            /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: "experience" }),
+            " that hits deep."
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "dj-progress", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "dj-progress-label", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Learning the decks" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { style: { color: "var(--cyan)" }, children: "In Progress" })
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "dj-bar-track", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "dj-bar-fill", style: { width: "45%" } }) }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "dj-progress-label", style: { marginTop: "10px" }, children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Music Theory" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { style: { color: "var(--pink)" }, children: "Growing 🎶" })
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "dj-bar-track", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "dj-bar-fill", style: { width: "60%", background: "linear-gradient(90deg, var(--pink), #ff99ee)" } }) })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "pl-quote", style: { borderColor: "rgba(0,229,255,0.2)", color: "var(--cyan)" }, children: `"Drop it like it's a production deploy 🎧"` })
+        ] })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "music-section pt-16 text-white gap-4", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-4xl font-bold text-center", children: "🎧 Festival EDM & Dubstep Tracks" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "playlist-container px-4 mt-10", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "iframe",
+          {
+            src: "https://open.spotify.com/embed/playlist/5WO5K55NsxCZJcScpjNl0V?utm_source=generator",
+            width: "100%",
+            height: "600",
+            loading: "lazy",
+            className: "spotify-playlist rounded-xl p-4 border border-gray-700 bg-gray-800/50 backdrop-blur-sm",
+            allow: "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          }
+        ) })
+      ] })
     ] })
   ] }) }) });
 };
