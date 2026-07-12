@@ -19130,19 +19130,23 @@ const About = () => {
         ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-4 text-gray-300 leading-relaxed", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { children: [
-            "I'm a passionate Senior Frontend Developer with over ",
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-cyan-400 font-semibold", children: "6 years" }),
-            " of experience building scalable web applications across SaaS, automotive, and e-commerce domains. My expertise lies in React.js, TypeScript, and modern JavaScript."
+            "I'm a ",
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-cyan-400 font-semibold", children: "Senior Engineer" }),
+            " with ",
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-cyan-400 font-semibold", children: "6.5+ years" }),
+            " of experience architecting scalable SaaS applications, enterprise data platforms, and robust backend services. My work spans React.js, TypeScript, JavaScript (ES6+), Zustand, Node.js, NestJS, Express.js, MongoDB, C# .NET Core, Entity Framework Core, and PostgreSQL."
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { children: [
             "Currently at ",
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-purple-400 font-semibold", children: "Korn Ferry International" }),
-            ", I lead a team of 5 developers while architecting high-performance B2B SaaS applications. I'm passionate about clean code, test-driven development, and mentoring the next generation."
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-purple-400 font-semibold", children: "Ness Digital Engineering" }),
+            " as an ",
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-purple-400 font-semibold", children: "Engineering Specialist" }),
+            ", I design and build high-performance frontend-driven solutions with a strong focus on micro frontend architecture, client-server state optimization, and application performance tuning."
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { children: [
-            "My focus on ",
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-pink-400 font-semibold", children: "micro frontend architecture" }),
-            " and performance optimization has consistently delivered 30-40% performance improvements across projects."
+            "My approach blends ",
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-pink-400 font-semibold", children: "micro frontend engineering" }),
+            ", reusable component design, AI-assisted delivery, and agile collaboration to deliver scalable solutions with measurable impact."
           ] })
         ] })
       ] }) }),
@@ -19153,10 +19157,10 @@ const About = () => {
             /* @__PURE__ */ jsxRuntimeExports.jsx("h4", { className: "font-semibold text-white text-lg", children: "Key Achievements" })
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-3", children: [
-            "30-40% performance improvements",
-            "20% faster project delivery",
-            "25% defect reduction via TDD",
-            "50k+ users served globally"
+            "40% faster application load times",
+            "Modular micro-frontend deployment speedups",
+            "High-coverage regression testing with Vitest",
+            "Enterprise-grade full-stack delivery across SaaS platforms"
           ].map((achievement, index) => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center text-gray-300", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-2 h-2 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full mr-3" }),
             achievement
@@ -19169,9 +19173,9 @@ const About = () => {
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-3", children: [
             "Micro Frontend Architecture",
-            "Component-Driven Development",
-            "Test-Driven Development (TDD)",
-            "Performance Optimization"
+            "State Optimization with Zustand & TanStack Query",
+            "Full-Stack API & Data Layer Design",
+            "Performance Optimization & AI-Assisted Delivery"
           ].map((focus, index) => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center text-gray-300", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-2 h-2 bg-gradient-to-r from-cyan-400 to-blue-400 rounded-full mr-3" }),
             focus
@@ -32825,14 +32829,27 @@ const Loader = () => {
 
 const experiences = [
   {
+    title: "Engineering Specialist",
+    company: "Ness Digital Engineering",
+    location: "Hyderabad",
+    duration: "March 2026 - Present",
+    achievements: [
+      "Architected and developed a high-performance Market Scan application to compare vehicle configurations, makes, and models across competing automotive brands.",
+      "Designed and scaled a modular Micro-frontend platform with Rspack and Rsbuild, accelerating build times and enabling independent feature deployments.",
+      "Built advanced data-grid workflows, shared views, and vehicle detail tracking using Zustand and TanStack Query to optimize multi-vehicle analytics flows.",
+      "Established robust Vitest and Vite testing patterns to improve regression coverage across highly interactive comparison features."
+    ]
+  },
+  {
     title: "Software Engineer II",
     company: "Korn Ferry International Pvt Ltd",
     location: "Bangalore",
-    duration: "Sept 2023 - Present",
+    duration: "Sept 2023 - March 2026",
     achievements: [
-      "Building scalable UI components for B2B SaaS applications with TypeScript, React.js, and Redux, resulting in 30% faster client decisions",
-      "Optimizing performance by 25% through cross-functional collaboration on API design (Nest.js) and resolving performance bottlenecks",
-      "Mentoring a team of 5 developers on clean architectural practices and TDD, accelerating delivery by 20%"
+      "Designed and developed scalable React.js applications using Redux Toolkit and Context API for enterprise HR analytics platforms.",
+      "Built secure RESTful APIs with Node.js and NestJS to streamline full-stack communication and data delivery across enterprise workflows.",
+      "Integrated MongoDB for flexible data modeling and optimized retrieval patterns for faster analytics experiences.",
+      "Leveraged GitHub Copilot and Cursor for AI-assisted frontend and backend code generation, reducing repetitive work and accelerating delivery."
     ]
   },
   {
@@ -32841,9 +32858,10 @@ const experiences = [
     location: "Hyderabad",
     duration: "May 2022 - Aug 2023",
     achievements: [
-      "Engineered B2B automotive product with JavaScript (React.js), automating 40% manual workflows via Redux reusable components",
-      "Designed responsive UI with CSS3 and Bootstrap, enhancing cross-browser compatibility",
-      "Troubleshooted API integration issues, reducing registration errors by 30%"
+      "Developed automotive SaaS features using React.js and C# .NET Core to automate end-to-end vehicle registration workflows.",
+      "Integrated backend services with Entity Framework Core and PostgreSQL to enable real-time data validation and dealership onboarding automation.",
+      "Designed responsive, accessible Redux-powered UI components that improved usability for 50+ dealership partners and reduced registration errors.",
+      "Collaborated within Agile Scrum ceremonies, driving full-stack code reviews and high-priority sprint delivery."
     ]
   },
   {
@@ -32852,9 +32870,10 @@ const experiences = [
     location: "Hyderabad",
     duration: "Jan 2020 - May 2022",
     achievements: [
-      "Built Shophub (React.js) with Stripe API, boosting conversions by 25% via reusable cart modules",
-      "Enhanced E-Pratibha engagement by 35% using Zoom SDK and JavaScript-driven responsive UI components",
-      "Streamlined Agile workflows for 4+ JavaScript projects, ensuring on-time delivery of scalable solutions"
+      "Built dynamic e-commerce and healthcare applications using React.js and JavaScript, improving customer conversion by 25%.",
+      "Integrated secure payment and backend APIs to ensure reliable transaction workflows and seamless data exchange.",
+      "Implemented Redux Persist and reusable UI modules to improve session continuity and simplify feature development.",
+      "Troubleshot customer-facing issues and delivered reliable solutions under tight deadlines."
     ]
   }
 ];
@@ -32918,65 +32937,52 @@ const Experiance = () => {
 
 const projects = [
   {
-    name: "Pay Analytics",
-    duration: "Sep 2023 - Present",
-    description: "A SaaS-based analytics dashboard designed to identify and resolve pay gaps using real-time compensation insights and benchmarks.",
+    name: "Market Scan",
+    duration: "March 2026 - Present",
+    description: "A frontend-driven automotive comparison platform built to analyze competing vehicle configurations, makes, and models through advanced multi-entity workflows.",
     highlights: [
-      "Led frontend architecture using React.js, TypeScript, and modular components, improving scalability and reusability",
-      "Boosted performance by 30% through code splitting, lazy loading, and Node.js optimizations",
-      "Collaborated with design and backend teams to translate Figma wireframes and streamline REST and serverless API integrations",
-      "Implemented responsive UI with LESS/CSS, aligned with design tokens and pixel-perfect requirements",
-      "Deployed updates via AWS CI/CD pipelines, improving delivery efficiency"
+      "Spearheaded the frontend implementation for an advanced comparison framework capable of processing complex automotive data schemas.",
+      "Engineered interactive UX workflows with dense data grids, saved user views, and multi-tier detail layouts for granular comparison analytics.",
+      "Built a modular Micro-frontend workspace using Rspack and Rsbuild to accelerate compilation times and enable independent feature deployments.",
+      "Used TanStack Query and Zustand to reduce server-state redundancy, improve caching, and synchronize local UI state across micro-modules."
     ],
-    technologies: ["React.js", "TypeScript", "Zustand", "NestJS", "Vite", "LESS", "AWS", "CI/CD"]
+    technologies: ["React.js", "TypeScript", "Zustand", "TanStack Query", "Rspack", "Rsbuild", "Tailwind CSS", "shadcn/ui"]
+  },
+  {
+    name: "Pay Equity",
+    duration: "Dec 2024 - Present",
+    description: "An enterprise SaaS platform for processing demographic and salary data to identify compensation disparities and simulate pay equity scenarios.",
+    highlights: [
+      "Engineered an end-to-end platform using React, TypeScript, and Micro-frontends to support large-scale compensation data workflows.",
+      "Built data-heavy visualization dashboards with Zustand and secure NestJS APIs backed by MongoDB for real-time analytics experiences.",
+      "Collaborated with backend teams to deliver secure data ingestion pipelines, automated reporting, and decision-focused workflows.",
+      "Applied design system components and UX iteration to simplify complex pay-equity simulations for enterprise users."
+    ],
+    technologies: ["React.js", "TypeScript", "Micro Frontends", "Zustand", "NestJS", "MongoDB", "Tailwind CSS"]
+  },
+  {
+    name: "Pay Analytics",
+    duration: "Sep 2023 - Nov 2024",
+    description: "A salary-benchmark analytics product built to surface pay gaps, improve talent retention, and deliver real-time market insights.",
+    highlights: [
+      "Led JavaScript architecture and code-splitting work to modernize a legacy compensation platform and improve performance by 30%.",
+      "Built scalable state flows with Zustand and optimized micro-frontend delivery using Vite to support faster application loads.",
+      "Mentored developers on modular UI practices and enforced TypeScript best practices for maintainable code quality.",
+      "Collaborated with backend teams to align UI and API integration for a more streamlined analytics experience."
+    ],
+    technologies: ["React.js", "JavaScript", "TypeScript", "Vite", "Zustand", "NestJS", "Micro Frontends"]
   },
   {
     name: "Vehicle Dealership App",
     duration: "May 2022 - Aug 2023",
-    description: "A platform to automate vehicle registration, dealer onboarding, and lienholder inquiries across 50+ dealerships.",
+    description: "A digital platform to automate vehicle registration, dealer onboarding, and lienholder inquiries across 50+ dealership partners.",
     highlights: [
-      "Built reusable components for dealer launch, permission handling, and inquiry modules",
-      "Implemented features to register all types of vehicles and generate temporary registration cards",
-      "Reduced load times by 30% through code optimization and modularization",
-      "Integrated REST APIs, resolved production bugs, and improved app responsiveness",
-      "Wrote unit and integration tests to maintain code quality"
+      "Built reusable Redux-powered components for onboarding, permissions, and registration workflows across dealership operations.",
+      "Integrated .NET Core REST APIs and PostgreSQL-backed services to enable real-time validation and temp card issuance automation.",
+      "Reduced manual effort and registration errors by improving role-based workflows and cross-functional data synchronization.",
+      "Delivered responsive, accessible UI patterns that supported high-volume registration operations and stakeholder collaboration."
     ],
-    technologies: ["React.js", "TypeScript", "Redux", "Redux-Toolkit", ".NET Core", "REST API"]
-  },
-  {
-    name: "First Match App (Healthcare)",
-    duration: "Dec 2021 - Apr 2022",
-    description: "A healthcare tool for managing clients and predicting outcomes based on configurable sections and questions.",
-    highlights: [
-      "Built features to create, edit, and delete dynamic forms, organizations, and sections",
-      "Integrated client redirection and score prediction features",
-      "Used Redux Toolkit and persist for state and session management",
-      "Worked closely with backend teams for API integration and bug fixing"
-    ],
-    technologies: ["React.js", "Redux Toolkit", "JavaScript", "REST API"]
-  },
-  {
-    name: "Shophub App (E-Commerce)",
-    duration: "Oct 2020 - Nov 2021",
-    description: "An eCommerce platform supporting category-based shopping, payments, and order tracking.",
-    highlights: [
-      "Developed modules like login, add to cart, checkout, and admin panel",
-      "Integrated Stripe for secure payments and implemented user authentication",
-      "Built reusable components for product management and shopping workflow",
-      "Improved performance with Redux Toolkit and optimized load times"
-    ],
-    technologies: ["React.js", "Redux Toolkit", "Stripe API", "JavaScript", "Bootstrap"]
-  },
-  {
-    name: "E-Pratibha (Education Platform)",
-    duration: "Jan 2020 - Sep 2020",
-    description: "An e-learning platform connecting students with tutors, offering video sessions and content delivery.",
-    highlights: [
-      "Implemented login authentication and reusable component architecture",
-      "Integrated Zoom Web SDK for virtual tutoring and Stripe for payments",
-      "Optimized data flow using Redux Toolkit, improving application performance"
-    ],
-    technologies: ["React.js", "Redux Toolkit", "Zoom Web SDK", "Stripe API", "JavaScript"]
+    technologies: ["React.js", "TypeScript", "Redux", "Redux-Toolkit", ".NET Core", "PostgreSQL", "REST API"]
   }
 ];
 const personalProjects = [
@@ -33197,11 +33203,11 @@ const Home = () => {
           /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
           /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent animate-pulse", children: "Akhil Ankathi" })
         ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xl md:text-2xl text-gray-300 mb-4", children: /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-purple-400 font-semibold", children: "Senior Frontend Developer" }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xl md:text-2xl text-gray-300 mb-4", children: /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-purple-400 font-semibold", children: "Engineering Specialist" }) }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-lg text-gray-400 mb-8 leading-relaxed max-w-xl", children: [
-          "Architecting scalable web applications with ",
-          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-cyan-400 font-semibold", children: "6+ years" }),
-          " of expertise in React.js, TypeScript, and micro frontend architecture. Leading teams to deliver performance-optimized solutions."
+          "Senior Engineer with ",
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-cyan-400 font-semibold", children: "6.5+ years" }),
+          " of experience building scalable SaaS products, enterprise data platforms, and high-performance frontend architectures using React.js, TypeScript, Node.js, and modern micro frontend tooling."
         ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex gap-4 mb-8", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -33283,22 +33289,22 @@ const Home = () => {
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-gradient-to-br from-purple-500/10 to-pink-500/10 backdrop-blur-sm border border-white/10 p-6 rounded-2xl hover:scale-105 hover:border-purple-400/50 transition-all duration-300", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(TrendingUp, { className: "w-10 h-10 text-purple-400" }),
             /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-xl font-semibold text-white mb-2", children: "Performance Expert" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-400 text-sm", children: "30-40% performance gains through optimization" })
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-400 text-sm", children: "Micro-frontend and state optimization for faster user journeys" })
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-gradient-to-br from-cyan-500/10 to-blue-500/10 backdrop-blur-sm border border-white/10 p-6 rounded-2xl hover:scale-105 transition-transform duration-300 mt-4", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(Users, { className: "w-12 h-12 text-cyan-400 mb-4" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-xl font-semibold text-white mb-2", children: "Team Leader" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-400 text-sm", children: "Leading and mentoring 5+ developers" })
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-xl font-semibold text-white mb-2", children: "Full-Stack Builder" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-400 text-sm", children: "React, Node.js, NestJS, MongoDB, and .NET Core delivery" })
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-gradient-to-br from-pink-500/10 to-purple-500/10 backdrop-blur-sm border border-white/10 p-6 rounded-2xl hover:scale-105 transition-transform duration-300 mt-4", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(Code, { className: "w-12 h-12 text-pink-400 mb-4" }),
             /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-xl font-semibold text-white mb-2", children: "Architecture Focus" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-400 text-sm", children: "Micro frontend expertise" })
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-400 text-sm", children: "Rspack, Rsbuild, Vite, and reusable component systems" })
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-gradient-to-br from-yellow-500/10 to-orange-500/10 backdrop-blur-sm border border-white/10 p-6 rounded-2xl hover:scale-105 transition-transform duration-300 mt-4", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(Award, { className: "w-12 h-12 text-yellow-400 mb-4" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-xl font-semibold text-white mb-2", children: "50k+ Users" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-400 text-sm", children: "Pixel-perfect applications" })
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-xl font-semibold text-white mb-2", children: "6.5+ Years" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-400 text-sm", children: "Driving scalable product outcomes across multiple domains" })
           ] })
         ] })
       ] })
@@ -33470,9 +33476,9 @@ const Contact = () => {
 };
 
 const skills = {
-  frontend: ["React.js", "JavaScript (ES6+)", "TypeScript", "HTML5/CSS3", "Next.js", "Redux/Zustand", "Micro Frontends", "Styled Components", "Bootstrap", "Tailwind CSS", "Material UI"],
-  backend: ["Node.js", "Nest.js", "RESTful API", ".NET Core", "PostgreSQL", "AWS Deploy", "CI/CD pipelines"],
-  testing: ["Jest", "React Testing Library", "Git", "Figma", "Storybook", "Babel", "Webpack", "Vite", "Vitest"]
+  frontend: ["JavaScript (ES6+)", "TypeScript", "React.js", "Redux Toolkit", "Context API", "Zustand", "SASS", "LESS", "Tailwind CSS", "shadcn/ui", "Material UI", "Chart.js", "Highcharts", "AG Grid", "Storybook", "HTML5/CSS3"],
+  backend: ["Node.js", "Nest.js", "Express.js", "MongoDB", "C# .NET Core", "Entity Framework Core", "PostgreSQL"],
+  testing: ["Jest", "React Testing Library", "Vitest", "Browser Debugging Tools", "Performance Testing", "Unit Testing"]
 };
 
 const Skills = () => {
