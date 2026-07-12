@@ -1,5 +1,6 @@
 export const skills = {
-    frontend: ["React.js", "JavaScript (ES6+)", "TypeScript", "HTML5/CSS3", "Next.js", "Redux/Zustand", "Micro Frontends", "Styled Components", "Bootstrap", "Tailwind CSS", "Material UI"],
-    backend: ["Node.js", "Nest.js", "RESTful API", ".NET Core", "PostgreSQL", "AWS Deploy", "CI/CD pipelines"],
-    testing: ["Jest", "React Testing Library", "Git", "Figma", "Storybook", "Babel", "Webpack", "Vite", "Vitest"]
+    frontend: ["JavaScript (ES6+)", "TypeScript", "React.js", "Redux Toolkit", "Context API", "Zustand", "SASS", "LESS", "Tailwind CSS", "shadcn/ui", "Material UI", "Chart.js", "Highcharts", "AG Grid", "Storybook", "HTML5/CSS3"],
+    backend: ["Node.js", "Nest.js", "Express.js", "MongoDB", "C# .NET Core", "Entity Framework Core", "PostgreSQL"],
+    architecture: ["Micro Frontend Architecture", "Rspack", "Rsbuild", "Vite", "Module Federation", "Code Splitting", "Lazy Loading", "SPA", "Reusable Component Libraries"],
+    testing: ["Jest", "React Testing Library", "Vitest", "Browser Debugging Tools", "Performance Testing", "Unit Testing"]
 };

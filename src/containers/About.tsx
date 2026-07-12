@@ -22,18 +22,18 @@ export const About = () => {
                                 </h3>
                                 <div className="space-y-4 text-gray-300 leading-relaxed">
                                     <p>
-                                        I'm a passionate Senior Frontend Developer with over <span className="text-cyan-400 font-semibold">6 years</span> of experience building
-                                        scalable web applications across SaaS, automotive, and e-commerce domains. My expertise
-                                        lies in React.js, TypeScript, and modern JavaScript.
+                                        I'm a <span className="text-cyan-400 font-semibold">Senior Engineer</span> with <span className="text-cyan-400 font-semibold">6.5+ years</span> of experience architecting scalable SaaS applications,
+                                        enterprise data platforms, and robust backend services. My work spans React.js, TypeScript, JavaScript (ES6+), Zustand,
+                                        Node.js, NestJS, Express.js, MongoDB, C# .NET Core, Entity Framework Core, and PostgreSQL.
                                     </p>
                                     <p>
-                                        Currently at <span className="text-purple-400 font-semibold">Korn Ferry International</span>, I lead a team of 5 developers while
-                                        architecting high-performance B2B SaaS applications. I'm passionate about clean code,
-                                        test-driven development, and mentoring the next generation.
+                                        Currently at <span className="text-purple-400 font-semibold">Ness Digital Engineering</span> as an <span className="text-purple-400 font-semibold">Engineering Specialist</span>,
+                                        I design and build high-performance frontend-driven solutions with a strong focus on micro frontend architecture, client-server state optimization,
+                                        and application performance tuning.
                                     </p>
                                     <p>
-                                        My focus on <span className="text-pink-400 font-semibold">micro frontend architecture</span> and performance optimization
-                                        has consistently delivered 30-40% performance improvements across projects.
+                                        My approach blends <span className="text-pink-400 font-semibold">micro frontend engineering</span>, reusable component design, AI-assisted delivery,
+                                        and agile collaboration to deliver scalable solutions with measurable impact.
                                     </p>
                                 </div>
                             </div>
@@ -49,10 +49,10 @@ export const About = () => {
                                 </div>
                                 <div className="space-y-3">
                                     {[
-                                        "30-40% performance improvements",
-                                        "20% faster project delivery",
-                                        "25% defect reduction via TDD",
-                                        "50k+ users served globally"
+                                        "40% faster application load times",
+                                        "Modular micro-frontend deployment speedups",
+                                        "High-coverage regression testing with Vitest",
+                                        "Enterprise-grade full-stack delivery across SaaS platforms"
                                     ].map((achievement, index) => (
                                         <div key={index} className="flex items-center text-gray-300">
                                             <div className="w-2 h-2 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full mr-3"></div>
@@ -72,9 +72,9 @@ export const About = () => {
                                 <div className="space-y-3">
                                     {[
                                         "Micro Frontend Architecture",
-                                        "Component-Driven Development",
-                                        "Test-Driven Development (TDD)",
-                                        "Performance Optimization"
+                                        "State Optimization with Zustand & TanStack Query",
+                                        "Full-Stack API & Data Layer Design",
+                                        "Performance Optimization & AI-Assisted Delivery"
                                     ].map((focus, index) => (
                                         <div key={index} className="flex items-center text-gray-300">
                                             <div className="w-2 h-2 bg-gradient-to-r from-cyan-400 to-blue-400 rounded-full mr-3"></div>

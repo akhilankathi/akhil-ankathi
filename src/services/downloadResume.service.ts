@@ -9,7 +9,7 @@ export const downloadResumeService = async () => {
     // Trigger download
     const link = document.createElement("a");
     link.href = url;
-    link.download = "Resume_Akhil_Ankathi_2025.docx";
+    link.download = "Resume_Akhil_Ankathi_2026.docx";
     document.body.appendChild(link);
     link.click();
     link.remove();

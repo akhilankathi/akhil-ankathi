@@ -52,11 +52,11 @@ export const Home = () => {
                             </h1>
 
                             <p className="text-xl md:text-2xl text-gray-300 mb-6">
-                                <span className="text-purple-400 font-semibold">Senior Frontend Developer</span>
+                                <span className="text-purple-400 font-semibold">Engineering Specialist</span>
                             </p>
 
                             <p className="text-lg text-gray-400 mb-8 leading-relaxed max-w-xl">
-                                Architecting scalable web applications with <span className="text-cyan-400 font-semibold">6+ years</span> of expertise in React.js, TypeScript, and micro frontend architecture. Leading teams to deliver performance-optimized solutions.
+                                Senior Engineer with <span className="text-cyan-400 font-semibold">6.5+ years</span> of experience building scalable SaaS products, enterprise data platforms, and high-performance frontend architectures using React.js, TypeScript, Node.js, and modern micro frontend tooling.
                             </p>
 
                             <div className="flex flex-wrap gap-4">
@@ -89,25 +89,25 @@ export const Home = () => {
                                 <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 backdrop-blur-sm border border-white/10 p-6 rounded-2xl hover:scale-105 transition-transform duration-300">
                                     <TrendingUp className="w-12 h-12 text-purple-400 mb-4" />
                                     <h3 className="text-xl font-semibold text-white mb-2">Performance Expert</h3>
-                                    <p className="text-gray-400 text-sm">30-40% performance gains through optimization</p>
+                                    <p className="text-gray-400 text-sm">Micro-frontend and state optimization for faster user journeys</p>
                                 </div>
 
                                 <div className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 backdrop-blur-sm border border-white/10 p-6 rounded-2xl hover:scale-105 transition-transform duration-300 mt-8">
                                     <Users className="w-12 h-12 text-cyan-400 mb-4" />
-                                    <h3 className="text-xl font-semibold text-white mb-2">Team Leader</h3>
-                                    <p className="text-gray-400 text-sm">Leading and mentoring 5+ developers</p>
+                                    <h3 className="text-xl font-semibold text-white mb-2">Full-Stack Builder</h3>
+                                    <p className="text-gray-400 text-sm">React, Node.js, NestJS, MongoDB, and .NET Core delivery</p>
                                 </div>
 
                                 <div className="bg-gradient-to-br from-pink-500/10 to-purple-500/10 backdrop-blur-sm border border-white/10 p-6 rounded-2xl hover:scale-105 transition-transform duration-300 -mt-4">
                                     <Code className="w-12 h-12 text-pink-400 mb-4" />
                                     <h3 className="text-xl font-semibold text-white mb-2">Architecture Focus</h3>
-                                    <p className="text-gray-400 text-sm">Micro frontend expertise</p>
+                                    <p className="text-gray-400 text-sm">Rspack, Rsbuild, Vite, and reusable component systems</p>
                                 </div>
 
                                 <div className="bg-gradient-to-br from-yellow-500/10 to-orange-500/10 backdrop-blur-sm border border-white/10 p-6 rounded-2xl hover:scale-105 transition-transform duration-300">
                                     <Award className="w-12 h-12 text-yellow-400 mb-4" />
-                                    <h3 className="text-xl font-semibold text-white mb-2">50k+ Users</h3>
-                                    <p className="text-gray-400 text-sm">Pixel-perfect applications</p>
+                                    <h3 className="text-xl font-semibold text-white mb-2">6.5+ Years</h3>
+                                    <p className="text-gray-400 text-sm">Driving scalable product outcomes across multiple domains</p>
                                 </div>
                             </div>
                         </div>
