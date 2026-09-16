@@ -37,7 +37,7 @@ export const Projects = () => {
 
 
     return (
-        <div id="projects" className="min-h-screen bg-gray-900 py-20">
+        <div id="projects" className="min-h-screen theme-page py-20">
 
             <div className="container mx-auto px-6 pt-5">                    {/* ================= Personal Projects ================= */}
                 <div className="mb-12 max-w-6xl mx-auto">

@@ -15,10 +15,10 @@ export const NavigationBar = () => {
         { id: 'contact', label: 'Contact' }
     ];
     return (
-        <nav className="fixed top-0 left-0 right-0 bg-gray-900/80 backdrop-blur-lg border-b border-white/10 z-50">
+        <nav className="fixed top-0 left-0 right-0 z-50 site-nav">
             <div className="container mx-auto px-6">
                 <div className="flex justify-between items-center py-4">
-                    <div className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
+                    <div className="text-2xl font-bold site-brand">
                         Akhil Ankathi
                     </div>
 
@@ -28,7 +28,7 @@ export const NavigationBar = () => {
                             <button
                                 key={item.id}
                                 onClick={() => navigate(item.id)}
-                                className="bg-gradient-to-r from-seablue-400 to-cyan-400 bg-clip-text text-transparent"
+                                className="nav-link"
                             // className={`px-4 py-2 rounded-lg font-medium transition-all duration-300 ${activeSection === item.id
                             //         ? 'text-white shadow-lg bg-none'
                             //         : 'text-gray-300 hover:text-white bg-none'
@@ -42,6 +42,9 @@ export const NavigationBar = () => {
                     {/* Mobile Menu Button */}
                     <div className="md:hidden">
                         <button
+                            className="nav-menu-button"
+                            aria-label={isMobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+                            aria-expanded={isMobileMenuOpen}
                             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                         // className="text-gray-300 hover:text-white p-2"
                         >
@@ -57,6 +60,7 @@ export const NavigationBar = () => {
                             {navItems.map((item) => (
                                 <button
                                     key={item.id}
+                                    className="nav-mobile-link"
                                     onClick={() => {
                                         navigate(item.id)
                                         setIsMobileMenuOpen(!isMobileMenuOpen)

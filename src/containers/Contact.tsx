@@ -1,7 +1,7 @@
 import { ExternalLink, Github, Linkedin, Mail, MapPin, Phone } from "lucide-react"
 
 export const Contact = () => {
-    return <div id="contact" className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 py-20">
+    return <div id="contact" className="min-h-screen theme-page py-20">
         <div className="container mx-auto px-6">
             <div className="max-w-6xl mx-auto">
                 <div className="text-center mb-16">

@@ -4,7 +4,7 @@ import { Route, Routes } from 'react-router'
 import { About } from './containers/About'
 import { Experiance } from './containers/Experiance'
 import { Projects } from './containers/Projects'
-import { Home } from './containers/Home.v2'
+import { Home as HomeV2 } from './containers/Home.v2'
 import { Contact } from './containers/Contact'
 import { Skills } from './containers/Skills'
 import { Footer } from './components/Footer'
@@ -13,11 +13,11 @@ import { ProgressBarComp } from './components/Progress'
 function App() {
 
   return (
-    <div className='min-h-screen bg-gray-900 w-full'>
+    <div className='min-h-screen w-full app-shell'>
       <NavigationBar />
       <Routes>
-        <Route path='' element={<Home />} />
-        <Route path='home' element={<Home />} />
+        <Route path='' element={<HomeV2 />} />
+        <Route path='home' element={<HomeV2 />} />
         <Route path='about' element={<About />} />
           <Route path='experience' element={<Experiance />} />
 

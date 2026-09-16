@@ -27,7 +27,7 @@ export const Home = () => {
     // }
 
     return (
-        <div id="home" className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 relative overflow-hidden max-w-full w-full left-0 right-0">
+        <div id="home" className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 relative overflow-hidden max-w-full w-full left-0 right-0 home-shell">
             <div className="absolute inset-0">
                 <div className="absolute top-20 left-10 w-72 h-72 bg-purple-500/10 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
                 <div className="absolute top-40 right-10 w-72 h-72 bg-cyan-500/10 rounded-full mix-blend-multiply filter blur-xl animate-pulse delay-1000"></div>
@@ -56,7 +56,7 @@ export const Home = () => {
                             </p>
 
                             <p className="text-lg text-gray-400 mb-8 leading-relaxed max-w-xl">
-                                Senior Engineer with <span className="text-cyan-400 font-semibold">6.5+ years</span> of experience building scalable SaaS products, enterprise data platforms, and high-performance frontend architectures using React.js, TypeScript, Node.js, and modern micro frontend tooling.
+                                Senior Engineer with <span className="text-cyan-400 font-semibold">6.8 years</span> of experience building scalable SaaS products, enterprise data platforms, and high-performance frontend architectures using React.js, TypeScript, Node.js, and modern micro frontend tooling.
                             </p>
 
                             <div className="flex flex-wrap gap-4">
@@ -106,7 +106,7 @@ export const Home = () => {
 
                                 <div className="bg-gradient-to-br from-yellow-500/10 to-orange-500/10 backdrop-blur-sm border border-white/10 p-6 rounded-2xl hover:scale-105 transition-transform duration-300">
                                     <Award className="w-12 h-12 text-yellow-400 mb-4" />
-                                    <h3 className="text-xl font-semibold text-white mb-2">6.5+ Years</h3>
+                                    <h3 className="text-xl font-semibold text-white mb-2">6.8 Years</h3>
                                     <p className="text-gray-400 text-sm">Driving scalable product outcomes across multiple domains</p>
                                 </div>
                             </div>

@@ -3,7 +3,7 @@ import './about.css'
 
 export const About = () => {
     return (
-        <div id="about" className="min-h-screen bg-gray-900 py-20">
+        <div id="about" className="min-h-screen theme-page py-20">
             <div className="container mx-auto px-6">
                 <div className="max-w-6xl mx-auto">
                     <div className="text-center mb-16">
@@ -22,7 +22,7 @@ export const About = () => {
                                 </h3>
                                 <div className="space-y-4 text-gray-300 leading-relaxed">
                                     <p>
-                                        I'm a <span className="text-cyan-400 font-semibold">Senior Engineer</span> with <span className="text-cyan-400 font-semibold">6.5+ years</span> of experience architecting scalable SaaS applications,
+                                        I'm a <span className="text-cyan-400 font-semibold">Senior Engineer</span> with <span className="text-cyan-400 font-semibold">6.8 years</span> of experience architecting scalable SaaS applications,
                                         enterprise data platforms, and robust backend services. My work spans React.js, TypeScript, JavaScript (ES6+), Zustand,
                                         Node.js, NestJS, Express.js, MongoDB, C# .NET Core, Entity Framework Core, and PostgreSQL.
                                     </p>
@@ -155,20 +155,20 @@ export const About = () => {
                                 <div className="dj-progress">
                                     <div className="dj-progress-label">
                                         <span>Learning the decks</span>
-                                        <span style={{ color: 'var(--cyan)' }}>In Progress</span>
+                                        <span className="dj-status">In Progress</span>
                                     </div>
                                     <div className="dj-bar-track">
                                         <div className="dj-bar-fill" style={{ width: '45%' }}></div>
                                     </div>
                                     <div className="dj-progress-label" style={{ marginTop: '10px' }}>
                                         <span>Music Theory</span>
-                                        <span style={{ color: 'var(--pink)' }}>Growing 🎶</span>
+                                        <span className="dj-growth">Growing 🎶</span>
                                     </div>
                                     <div className="dj-bar-track">
                                         <div className="dj-bar-fill" style={{ width: '60%', background: 'linear-gradient(90deg, var(--pink), #ff99ee)' }}></div>
                                     </div>
                                 </div>
-                                <div className="pl-quote" style={{ borderColor: 'rgba(0,229,255,0.2)', color: 'var(--cyan)' }}  >"Drop it like it's a production deploy 🎧"</div>
+                                <div className="pl-quote deploy-quote">"Drop it like it's a production deploy 🎧"</div>
                             </div>
 
                         </div>
@@ -183,6 +183,7 @@ export const About = () => {
 
                                 <iframe
                                     src="https://open.spotify.com/embed/playlist/5WO5K55NsxCZJcScpjNl0V?utm_source=generator"
+                                    title="Akhil Ankathi's Festival EDM and Dubstep playlist"
                                     width="100%"
                                     height="600"
                                     loading="lazy"

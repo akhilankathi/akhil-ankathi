@@ -28,12 +28,12 @@ export const Home = () => {
     // }
 
     return (
-        <div id="home" className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 relative overflow-hidden max-w-full w-full left-0 right-0">
+        <div id="home" className="min-h-screen bg-[#101713] relative overflow-hidden max-w-full w-full left-0 right-0 home-shell">
             {/* Animated background blobs */}
             <div className="absolute inset-0">
-                <div className="absolute top-20 left-10 w-96 h-96 bg-purple-500/20 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
-                <div className="absolute top-40 right-10 w-96 h-96 bg-cyan-500/20 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
-                <div className="absolute -bottom-8 left-20 w-96 h-96 bg-pink-500/20 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+                <div className="absolute top-20 left-10 w-96 h-96 bg-lime-300/10 rounded-full mix-blend-screen filter blur-3xl animate-pulse"></div>
+                <div className="absolute top-40 right-10 w-96 h-96 bg-cyan-300/10 rounded-full mix-blend-screen filter blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+                <div className="absolute -bottom-8 left-20 w-96 h-96 bg-emerald-400/10 rounded-full mix-blend-screen filter blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
             </div>
 
             {/* Floating particles */}
@@ -60,8 +60,8 @@ export const Home = () => {
                     75% { transform: translateY(-20px) translateX(5px); }
                 }
                 @keyframes glow {
-                    0%, 100% { box-shadow: 0 0 20px rgba(168, 85, 247, 0.4); }
-                    50% { box-shadow: 0 0 40px rgba(168, 85, 247, 0.8), 0 0 60px rgba(236, 72, 153, 0.4); }
+                    0%, 100% { box-shadow: 0 0 20px rgba(198, 255, 74, 0.2); }
+                    50% { box-shadow: 0 0 40px rgba(198, 255, 74, 0.45), 0 0 60px rgba(141, 235, 255, 0.2); }
                 }
             `}</style>
 
@@ -70,39 +70,42 @@ export const Home = () => {
                     <div className="grid lg:grid-cols-2 gap-16 items-center">
                         {/* Left side - Content */}
                         <div className="order-2 lg:order-1">
-                            <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-purple-500/20 to-cyan-500/20 rounded-full mb-6 backdrop-blur-sm border border-white/10 hover:border-purple-400/50 transition-all duration-300">
+                            <div className="inline-flex items-center hero-kicker">
                                 <Sparkles className="w-4 h-4 text-cyan-400 mr-2 animate-pulse" />
                                 <span className="text-cyan-300 text-sm font-medium">Available for new opportunities</span>
                             </div>
 
-                            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight hero-title">
                                 <span className="text-white">Hi, I'm</span>
                                 <br />
-                                <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent animate-pulse">
+                                <span className="hero-title-accent">
                                     Akhil Ankathi
                                 </span>
                             </h1>
 
                             <p className="text-xl md:text-2xl text-gray-300 mb-4">
-                                <span className="text-purple-400 font-semibold">Engineering Specialist</span>
+                                <span className="hero-role">Engineering Specialist</span>
                             </p>
 
                             <p className="text-lg text-gray-400 mb-8 leading-relaxed max-w-xl">
-                                Senior Engineer with <span className="text-cyan-400 font-semibold">6.5+ years</span> of experience building scalable SaaS products, enterprise data platforms, and high-performance frontend architectures using React.js, TypeScript, Node.js, and modern micro frontend tooling.
+                                Senior Engineer with <span className="text-[#c6ff4a] font-semibold">6.8 years</span> of experience building scalable SaaS products, enterprise data platforms, and high-performance frontend architectures using React.js, TypeScript, Node.js, and modern micro frontend tooling.
                             </p>
 
                             {/* Social links */}
-                            <div className="flex gap-4 mb-8">
+                            <div className="flex gap-4 mb-8 hero-socials">
                                 <a href="https://github.com/akhilankathi" target="_blank" rel="noopener noreferrer"
-                                    className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-purple-500/20 hover:border-purple-400/50 transition-all duration-300">
+                                  aria-label="Open Akhil Ankathi's GitHub profile"
+                                    className="hero-social-link">
                                     <Github className="w-5 h-5 text-gray-400" />
                                 </a>
                                 <a href="https://www.linkedin.com/in/akhilvarmaankathi" target="_blank" rel="noopener noreferrer"
-                                    className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-cyan-500/20 hover:border-cyan-400/50 transition-all duration-300">
+                                  aria-label="Open Akhil Ankathi's LinkedIn profile"
+                                    className="hero-social-link">
                                     <Linkedin className="w-5 h-5 text-gray-400" />
                                 </a>
                                 <a href="mailto:akhilankathi@gmail.com"
-                                    className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-pink-500/20 hover:border-pink-400/50 transition-all duration-300">
+                                  aria-label="Email Akhil Ankathi"
+                                    className="hero-social-link">
                                     <Mail className="w-5 h-5 text-gray-400" />
                                 </a>
                             </div>
@@ -110,14 +113,14 @@ export const Home = () => {
                             <div className="flex flex-wrap gap-4">
                                 <button
                                     onClick={() => navigate('/projects')}
-                                    className="group bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-4 rounded-xl font-semibold hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300 flex items-center"
+                                    className="group hero-cta hero-cta-primary"
                                 >
                                     View My Work
                                     <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                                 </button>
                                 <button
                                     onClick={() => navigate('/contact')}
-                                    className="group border-2 border-cyan-400/50 text-cyan-300 px-8 py-4 rounded-xl font-semibold hover:bg-cyan-400/10 hover:border-cyan-400 transition-all duration-300 backdrop-blur-sm flex items-center"
+                                    className="group hero-cta hero-cta-secondary"
                                 >
                                     <Download className="mr-2 w-5 h-5" />
                                     Get In Touch
@@ -129,15 +132,15 @@ export const Home = () => {
                         <div className="relative order-1 lg:order-2">
                             {/* Profile Image Container */}
                             <div className="relative mb-8 lg:mb-0">
-                                <div className="relative w-80 h-80 mx-auto">
+                                <div className="relative w-80 h-80 mx-auto profile-orbit">
                                     {/* Animated rings */}
-                                    <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 opacity-20 animate-pulse"></div>
-                                    <div className="absolute inset-2 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 opacity-20 animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+                                    <div className="absolute inset-0 profile-ring profile-ring-primary animate-pulse"></div>
+                                    <div className="absolute inset-2 profile-ring profile-ring-secondary animate-pulse" style={{ animationDelay: '0.5s' }}></div>
 
                                     {/* Image container with glow effect */}
-                                    <div className="absolute inset-4 rounded-full overflow-hidden border-4 border-white/10 shadow-2xl" style={{ animation: 'glow 3s ease-in-out infinite' }}>
+                                    <div className="absolute inset-4 profile-photo" style={{ animation: 'glow 3s ease-in-out infinite' }}>
                                         {/* Replace this with your actual image */}
-                                        <div className="w-full h-full bg-gradient-to-br from-purple-600 via-pink-600 to-cyan-600 flex items-center justify-center">
+                                        <div className="w-full h-full profile-photo-inner flex items-center justify-center">
                                             {/* <span className="text-white text-6xl font-bold">AA</span> */}
 
                                             {/* Uncomment below and add your image */}
@@ -151,49 +154,49 @@ export const Home = () => {
                                 </div>
 
                                 {/* Floating badges */}
-                                <div className="absolute right-20 top-12 bg-gradient-to-br from-purple-500/90 to-pink-500/90 backdrop-blur-sm px-3 py-2 rounded-full border border-white/20 shadow-xl animate-pulse">
+                                <div className="absolute right-20 top-12 tech-badge animate-pulse">
                                     <p className="text-white text-xs font-bold">React.js</p>
                                 </div>
-                                <div className="absolute left-16 top-12 bg-gradient-to-br from-cyan-500/90 to-blue-500/90 backdrop-blur-sm px-3 py-2 rounded-full border border-white/20 shadow-xl animate-pulse" style={{ animationDelay: '0.5s' }}>
+                                <div className="absolute left-16 top-12 tech-badge animate-pulse" style={{ animationDelay: '0.5s' }}>
                                     <p className="text-white text-xs font-bold">TypeScript</p>
                                 </div>
-                                <div className="absolute right-16 top-40 bg-gradient-to-br from-pink-500/90 to-rose-500/90 backdrop-blur-sm px-3 py-2 rounded-full border border-white/20 shadow-xl animate-pulse" style={{ animationDelay: '1s' }}>
+                                <div className="absolute right-16 top-40 tech-badge animate-pulse" style={{ animationDelay: '1s' }}>
                                     <p className="text-white text-xs font-bold">Redux</p>
                                 </div>
-                                <div className="absolute left-18 top-40 bg-gradient-to-br from-yellow-500/90 to-orange-500/90 backdrop-blur-sm px-3 py-2 rounded-full border border-white/20 shadow-xl animate-pulse" style={{ animationDelay: '1.5s' }}>
+                                <div className="absolute left-18 top-40 tech-badge animate-pulse" style={{ animationDelay: '1.5s' }}>
                                     <p className="text-white text-xs font-bold">Node.js</p>
                                 </div>
-                                <div className="absolute right-24 bottom-16 bg-gradient-to-br from-indigo-500/90 to-purple-500/90 backdrop-blur-sm px-3 py-2 rounded-full border border-white/20 shadow-xl animate-pulse" style={{ animationDelay: '2s' }}>
+                                <div className="absolute right-24 bottom-16 tech-badge animate-pulse" style={{ animationDelay: '2s' }}>
                                     <p className="text-white text-xs font-bold">Vite</p>
                                 </div>
-                                <div className="absolute left-12 bottom-16 bg-gradient-to-br from-green-500/90 to-emerald-500/90 backdrop-blur-sm px-3 py-2 rounded-full border border-white/20 shadow-xl animate-pulse" style={{ animationDelay: '2.5s' }}>
+                                <div className="absolute left-12 bottom-16 tech-badge animate-pulse" style={{ animationDelay: '2.5s' }}>
                                     <p className="text-white text-xs font-bold">JavaScript</p>
                                 </div>
                             </div>
 
                             {/* Stats Grid */}
-                            <div className="grid grid-cols-2 gap-4 mt-8">
-                                <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 backdrop-blur-sm border border-white/10 p-6 rounded-2xl hover:scale-105 hover:border-purple-400/50 transition-all duration-300">
+                            <div className="grid grid-cols-2 gap-4 mt-8 stats-grid">
+                              <div className="stat-card">
                                     <TrendingUp className="w-10 h-10 text-purple-400" />
                                     <h3 className="text-xl font-semibold text-white mb-2">Performance Expert</h3>
                                     <p className="text-gray-400 text-sm">Micro-frontend and state optimization for faster user journeys</p>
                                 </div>
 
-                                <div className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 backdrop-blur-sm border border-white/10 p-6 rounded-2xl hover:scale-105 transition-transform duration-300 mt-4">
+                                <div className="stat-card mt-4">
                                     <Users className="w-12 h-12 text-cyan-400 mb-4" />
                                     <h3 className="text-xl font-semibold text-white mb-2">Full-Stack Builder</h3>
                                     <p className="text-gray-400 text-sm">React, Node.js, NestJS, MongoDB, and .NET Core delivery</p>
                                 </div>
 
-                                <div className="bg-gradient-to-br from-pink-500/10 to-purple-500/10 backdrop-blur-sm border border-white/10 p-6 rounded-2xl hover:scale-105 transition-transform duration-300 mt-4">
+                                <div className="stat-card mt-4">
                                     <Code className="w-12 h-12 text-pink-400 mb-4" />
                                     <h3 className="text-xl font-semibold text-white mb-2">Architecture Focus</h3>
                                     <p className="text-gray-400 text-sm">Rspack, Rsbuild, Vite, and reusable component systems</p>
                                 </div>
 
-                                <div className="bg-gradient-to-br from-yellow-500/10 to-orange-500/10 backdrop-blur-sm border border-white/10 p-6 rounded-2xl hover:scale-105 transition-transform duration-300 mt-4">
+                                <div className="stat-card mt-4">
                                     <Award className="w-12 h-12 text-yellow-400 mb-4" />
-                                    <h3 className="text-xl font-semibold text-white mb-2">6.5+ Years</h3>
+                                    <h3 className="text-xl font-semibold text-white mb-2">6.8 Years</h3>
                                     <p className="text-gray-400 text-sm">Driving scalable product outcomes across multiple domains</p>
                                 </div>
                             </div>
@@ -203,11 +206,11 @@ export const Home = () => {
             </div>
 
 {/* ================= Personal Products Section ================= */}
-<section className="relative z-10 container mx-auto px-6 pb-28">
+<section className="relative z-10 container mx-auto px-6 pb-28 products-section">
   {/* Section Header */}
-  <div className="text-center mb-20">
+  <div className="text-center mb-20 products-heading">
     <h2 className="text-4xl md:text-6xl font-bold mb-6">
-      <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">
+      <span className="products-title">
         Personal Products
       </span>
     </h2>
@@ -219,8 +222,8 @@ export const Home = () => {
 
   <div className="grid lg:grid-cols-2 gap-12">
     {/* ================= Frontend Learning Hub ================= */}
-    <div className="group relative rounded-3xl p-[1px] bg-gradient-to-br from-cyan-400/40 via-purple-400/40 to-pink-400/40 hover:scale-[1.02] transition-all duration-300">
-      <div className="h-full backdrop-blur-xl rounded-3xl p-10 border border-white/10">
+    <div className="group product-card product-card-lime">
+      <div className="h-full product-card-inner">
         {/* Title */}
         <h3 className="text-3xl font-semibold text-white mb-4">
           Frontend Learning Hub
@@ -238,12 +241,15 @@ export const Home = () => {
           <p className="text-sm uppercase tracking-wider text-gray-400 mb-3">
             Tech Stack
           </p>
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2 product-stack">
             {[
               "React",
               "Vite",
               "TypeScript",
               "Redux",
+              "Node.js",
+              "Express.js",
+              "MongoDB",
               "Zustand",
               "Tailwind CSS",
               "Lucide-react",
@@ -252,7 +258,7 @@ export const Home = () => {
             ].map((tech) => (
               <span
                 key={tech}
-                className="px-3 py-1 text-xs rounded-full bg-white/10 text-gray-300 border border-white/10 hover:bg-cyan-400/20 hover:border-cyan-400/40 transition"
+                className="product-tag"
               >
                 {tech}
               </span>
@@ -272,7 +278,7 @@ export const Home = () => {
           href="https://frontendlearninghub.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center text-cyan-400 font-semibold hover:underline"
+          className="inline-flex items-center product-link"
         >
           Explore Product
           <ArrowRight className="ml-2 w-4 h-4" />
@@ -281,8 +287,8 @@ export const Home = () => {
     </div>
 
     {/* ================= Avicii Music App ================= */}
-    <div className="group relative rounded-3xl p-[1px] bg-gradient-to-br from-pink-400/40 via-purple-400/40 to-indigo-400/40 hover:scale-[1.02] transition-all duration-300">
-      <div className="h-full  backdrop-blur-xl rounded-3xl p-10 border border-white/10">
+    <div className="group product-card product-card-cyan">
+      <div className="h-full product-card-inner">
         {/* Title */}
         <h3 className="text-3xl font-semibold text-white mb-4">
           Avicii Music App
@@ -300,12 +306,16 @@ export const Home = () => {
           <p className="text-sm uppercase tracking-wider text-gray-400 mb-3">
             Tech Stack
           </p>
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2 product-stack">
             {[
               "React",
               "Vite",
               "Tailwind CSS",
               "Redux",
+              "Node.js",
+              "Express.js",
+              "MongoDB",
+              "Zustand",
               "Framer Motion",
               "Lucide-react",
               "Context API",
@@ -313,7 +323,7 @@ export const Home = () => {
             ].map((tech) => (
               <span
                 key={tech}
-                className="px-3 py-1 text-xs rounded-full bg-white/10 text-gray-300 border border-white/10 hover:bg-pink-400/20 hover:border-pink-400/40 transition"
+                className="product-tag"
               >
                 {tech}
               </span>
@@ -333,7 +343,7 @@ export const Home = () => {
           href="https://avicii-eight.vercel.app"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center text-pink-400 font-semibold hover:underline"
+          className="inline-flex items-center product-link"
         >
           Explore Product
           <ArrowRight className="ml-2 w-4 h-4" />
